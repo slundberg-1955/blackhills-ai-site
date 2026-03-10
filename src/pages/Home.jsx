@@ -66,41 +66,35 @@ export default function Home() {
                 </span>
               </div>
               <div className="hero-panel-body">
-                <div style={{ fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--ink-30)', marginBottom: 14 }}>
-                  Data Sources
-                </div>
+                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--ink-30)', textTransform: 'uppercase', marginBottom: 12 }}>Data Sources</div>
                 {[
                   { icon: '⚡', label: 'USPTO Patent Center', sub: 'Real-time · sub-minute sync' },
-                  { icon: '🗂', label: 'Your IPMS', sub: 'Anaqua · Foundation · CPI · AppColl · Patricia' },
+                  { icon: '📦', label: 'Your IPMS', sub: 'Anaqua · Foundation · CPI · AppColl · Patricia' },
                   { icon: '📄', label: 'Your DMS', sub: 'Auto-route · split · merge · convert' },
                   { icon: '📚', label: 'Patent Literature / NPL', sub: 'Prior art delivery pipeline' },
                 ].map(l => (
                   <div key={l.label} className="hub-layer">
                     <span className="hub-layer-icon">{l.icon}</span>
                     <div>
-                      <div style={{ fontWeight: 500, color: 'var(--ink)' }}>{l.label}</div>
-                      <div style={{ fontSize: '0.68rem', color: 'var(--ink-30)', marginTop: 1 }}>{l.sub}</div>
+                      <div style={{ fontWeight: 600, color: 'var(--ink)', fontSize: '0.82rem' }}>{l.label}</div>
+                      <div style={{ fontSize: '0.68rem', color: 'var(--ink-30)', marginTop: 2, fontFamily: 'var(--font-mono)', letterSpacing: '0.02em' }}>{l.sub}</div>
                     </div>
                   </div>
                 ))}
                 <div className="hub-arrow">▼</div>
                 <div className="hub-layer core-layer">
-                  <span className="hub-layer-icon">🔶</span>
+                  <span style={{ fontSize: '1.15rem' }}>◆</span>
                   <div>
-                    <div style={{ fontSize: '0.85rem', letterSpacing: '0.06em' }}>OTTO HUB<span className="tm">™</span></div>
-                    <div style={{ fontSize: '0.68rem', opacity: 0.65, marginTop: 1 }}>
+                    <div style={{ fontSize: '0.88rem', letterSpacing: '0.08em', fontWeight: 700 }}>OTTO HUB<span className="tm">™</span></div>
+                    <div style={{ fontSize: '0.68rem', opacity: 0.55, marginTop: 2, letterSpacing: '0.04em' }}>
                       AI Enrichment · Data APIs · Document APIs
                     </div>
                   </div>
                 </div>
                 <div className="hub-arrow">▼</div>
-                <div style={{ display: 'flex', gap: 6, marginTop: 4 }}>
+                <div className="hub-output-grid">
                   {['Otto IP™ Tools', 'Your Custom AI', 'Partner Apps'].map(t => (
-                    <div key={t} style={{
-                      flex: 1, padding: '10px 8px', border: '1px solid var(--ink-10)',
-                      fontSize: '0.68rem', color: 'var(--ink-50)', textAlign: 'center',
-                      fontFamily: 'var(--font-mono)'
-                    }}>{t}</div>
+                    <div key={t} className="hub-output-item">{t}</div>
                   ))}
                 </div>
               </div>

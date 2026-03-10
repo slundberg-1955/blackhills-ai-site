@@ -94,49 +94,46 @@ export default function OttoHub() {
               </ul>
             </div>
             <div>
-              <div className="hero-panel" style={{ border: '1px solid var(--ink-10)' }}>
+              <div className="hero-panel">
                 <div className="hero-panel-header">
                   <div className="hp-dot" style={{ background: '#ff5f57' }} />
                   <div className="hp-dot" style={{ background: '#febc2e' }} />
                   <div className="hp-dot" style={{ background: '#28c840' }} />
                   <span style={{ marginLeft: 10, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>
-                    otto-hub / data-flow
+                    otto-hub / architecture
                   </span>
                 </div>
                 <div className="hero-panel-body">
+                  <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--ink-30)', textTransform: 'uppercase', marginBottom: 12 }}>Data Sources</div>
                   {[
-                    { icon: '⚡', label: 'USPTO Patent Center', sub: 'Real-time prosecution data · Office Actions · NOAs · File histories' },
-                    { icon: '🗂', label: 'Your IPMS', sub: 'Matter records · Dockets · Deadlines · Billing data' },
-                    { icon: '📄', label: 'Your DMS', sub: 'Auto-routing · Renaming · PDF/DOCX/XML support' },
-                    { icon: '📚', label: 'Patent & NPL Literature', sub: 'Prior art retrieval & delivery pipeline' },
-                    { icon: '🏷', label: 'Rich IP Metadata', sub: 'Enriched data layers · Classification · Entity mapping' },
+                    { icon: '⚡', label: 'USPTO Patent Center', sub: 'Real-time · sub-minute sync' },
+                    { icon: '📦', label: 'Your IPMS', sub: 'Anaqua · Foundation · CPI · AppColl · Patricia' },
+                    { icon: '📄', label: 'Your DMS', sub: 'Auto-route · split · merge · convert' },
+                    { icon: '📚', label: 'Patent Literature / NPL', sub: 'Prior art delivery pipeline' },
+                    { icon: '🏷', label: 'Rich IP Metadata', sub: 'Classification · Entity mapping · Enrichment' },
                   ].map(l => (
                     <div key={l.label} className="hub-layer">
                       <span className="hub-layer-icon">{l.icon}</span>
                       <div>
-                        <div style={{ fontWeight: 500, color: 'var(--ink)', fontSize: '0.82rem' }}>{l.label}</div>
-                        <div style={{ fontSize: '0.68rem', color: 'var(--ink-30)', marginTop: 1 }}>{l.sub}</div>
+                        <div style={{ fontWeight: 600, color: 'var(--ink)', fontSize: '0.82rem' }}>{l.label}</div>
+                        <div style={{ fontSize: '0.68rem', color: 'var(--ink-30)', marginTop: 2, fontFamily: 'var(--font-mono)', letterSpacing: '0.02em' }}>{l.sub}</div>
                       </div>
                     </div>
                   ))}
-                  <div className="hub-arrow" style={{ color: 'var(--ink-30)' }}>▼</div>
+                  <div className="hub-arrow">▼</div>
                   <div className="hub-layer core-layer">
-                    <span style={{ fontSize: '1.1rem' }}>🔶</span>
+                    <span style={{ fontSize: '1.15rem' }}>◆</span>
                     <div>
-                      <div style={{ fontSize: '0.9rem', letterSpacing: '0.06em', fontWeight: 600 }}>OTTO HUB<span className="tm">™</span> AI ENRICHMENT LAYER</div>
-                      <div style={{ fontSize: '0.68rem', opacity: 0.65, marginTop: 1 }}>
-                        AI Analysis · Data APIs · Document APIs · Custom Platform
+                      <div style={{ fontSize: '0.88rem', letterSpacing: '0.08em', fontWeight: 700 }}>OTTO HUB<span className="tm">™</span></div>
+                      <div style={{ fontSize: '0.68rem', opacity: 0.55, marginTop: 2, letterSpacing: '0.04em' }}>
+                        AI Enrichment · Data APIs · Document APIs
                       </div>
                     </div>
                   </div>
-                  <div className="hub-arrow" style={{ color: 'var(--ink-30)' }}>▼</div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginTop: 4 }}>
-                    {['Otto IP™ Web', 'Otto IP™ Word', 'Your Custom AI', 'Partner Apps'].map(t => (
-                      <div key={t} style={{
-                        padding: '10px 8px', border: '1px solid var(--ink-10)',
-                        fontSize: '0.7rem', color: 'var(--ink-50)', textAlign: 'center',
-                        fontFamily: 'var(--font-mono)', background: 'var(--white)'
-                      }}>{t}</div>
+                  <div className="hub-arrow">▼</div>
+                  <div className="hub-output-grid">
+                    {['Otto IP™ Tools', 'Your Custom AI', 'Partner Apps'].map(t => (
+                      <div key={t} className="hub-output-item">{t}</div>
                     ))}
                   </div>
                 </div>
