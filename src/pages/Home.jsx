@@ -152,6 +152,7 @@ export default function Home() {
                   { n: '2011', label: 'Otto HUB™ platform integrated with IPMS and Patent Center' },
                   { n: '2012', label: 'First deterministic docketing engine deployed' },
                   { n: '2013', label: 'Start of large-scale fully automated docketing' },
+                  { n: '2015', label: 'Full API integration with all leading API-enabled IP management systems' },
                   { n: '2020', label: 'Surpassed one million fully automated docketing transactions' },
                   { n: '2024', label: 'Gen AI features introduced to Otto HUB™' },
                   { n: '2024', label: 'Launched Otto IP™ generative AI patent drafting solution and Honu™ agent reporting platform' },
