@@ -52,7 +52,7 @@ export default function OttoHub() {
           <div className="gold-rule" />
           <div className="four-col" style={{ marginTop: 48 }}>
             {[
-              { icon: '⚡', title: 'Real-Time Data Sync', desc: 'Direct Patent Center integration delivers Office Actions, allowances, and new filings the moment they appear at the USPTO. Sub-minute latency.' },
+              { icon: '⚡', title: 'Real-Time Data Sync', desc: 'Direct Patent Center integration delivers Office Actions, allowances, and new filings as soon as they appear at the USPTO. All your Customer Numbers are updated daily or on-demand.' },
               { icon: '🤖', title: 'AI-Native by Design', desc: 'Every endpoint returns structured JSON engineered for LLM workflows. Built-in AI Summary and Analysis functions layer intelligence directly onto raw data.' },
               { icon: '📁', title: 'Full Data Enrichment', desc: "Otto HUB doesn't just pass through raw Patent Center data — it enriches it with structured parsing, IPMS cross-referencing, and AI analysis layers." },
               { icon: '🔒', title: 'Enterprise Security', desc: 'OAuth 2.0 authentication, scoped API keys, US-based infrastructure, and zero data retention. BYOK option available.' },
