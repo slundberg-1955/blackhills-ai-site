@@ -6,9 +6,8 @@ export default function OttoIP() {
       {/* HERO */}
       <section style={{ background: 'var(--off-white)', padding: '140px 60px 100px', borderBottom: '1px solid var(--ink-10)' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-          <div className="eyebrow">IP Tools</div>
           <h1 className="display" style={{ maxWidth: 760 }}>
-            Otto IP<span className="tm">™</span> Suite<br /><em>AI tools built by<br/>IP attorneys.</em>
+            Otto IP Suite<br /><em>AI tools built by<br/>IP attorneys.</em>
           </h1>
           <p className="lead" style={{ marginTop: 28 }}>
             The Otto IP Suite is a set of AI-powered tools for patent and trademark prosecution, 
