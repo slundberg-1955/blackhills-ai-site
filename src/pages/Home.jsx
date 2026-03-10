@@ -153,7 +153,7 @@ export default function Home() {
                   { n: '2012', label: 'First deterministic docketing engine deployed' },
                   { n: '2013', label: 'Start of large-scale fully automated docketing' },
                   { n: '2020', label: 'Surpassed one million fully automated docketing transactions' },
-                  { n: '2023', label: 'Gen AI integration layer added to Otto HUB™' },
+                  { n: '2024', label: 'Gen AI features introduced to Otto HUB™' },
                   { n: '2024', label: 'Launched Otto IP™ generative AI patent drafting solution and Honu™ agent reporting platform' },
                   { n: '2025', label: 'Launched first-ever automated EOU scanning and Otto IP™ AI drafting tools' },
                   { n: '2026', label: 'Honu™ automated file transfer platform introduced' },
