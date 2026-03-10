@@ -19,29 +19,44 @@ export function Nav() {
     return () => { document.body.style.overflow = '' }
   }, [menuOpen])
 
+  const portals = [
+    { label: 'Otto Assistant™ Log-In', href: 'https://protect-us.mimecast.com/s/3q3MC73OWPFz8wYGs8erQY' },
+    { label: 'Otto IP™ Log-In', href: 'https://filehistory.blackhillsip.com/?chat=true' },
+    { label: 'Client Portal', href: 'https://portal.blackhillsip.com/' },
+    { label: 'Honu Portal', href: 'https://honu.blackhillsip.com/' },
+    { label: 'Renewals Portal', href: 'https://blackhillsiprenewals.com/custom/bhipr/home.jsf' },
+  ]
+
   return (
-    <nav className="nav">
-      <Link to="/" className="nav-brand">
-        <span className="nav-brand-text">BLACKHILLS<span>AI</span></span>
-      </Link>
-      <button
-        className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
-        onClick={() => setMenuOpen(o => !o)}
-        aria-label="Toggle menu"
-      >
-        <span /><span /><span />
-      </button>
-      <ul className={`nav-links ${menuOpen ? 'nav-links--open' : ''}`}>
-        {links.map(l => (
-          <li key={l.to}>
-            <Link
-              to={l.to}
-              className={`${pathname === l.to ? 'active' : ''} ${l.to === '/contact' ? 'nav-cta' : ''}`}
-            >{l.label}</Link>
-          </li>
+    <>
+      <nav className="nav">
+        <Link to="/" className="nav-brand">
+          <span className="nav-brand-text">BLACKHILLS<span>AI</span></span>
+        </Link>
+        <button
+          className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
+          onClick={() => setMenuOpen(o => !o)}
+          aria-label="Toggle menu"
+        >
+          <span /><span /><span />
+        </button>
+        <ul className={`nav-links ${menuOpen ? 'nav-links--open' : ''}`}>
+          {links.map(l => (
+            <li key={l.to}>
+              <Link
+                to={l.to}
+                className={`${pathname === l.to ? 'active' : ''} ${l.to === '/contact' ? 'nav-cta' : ''}`}
+              >{l.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div className="portal-bar">
+        {portals.map(p => (
+          <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer" className="portal-link">{p.label}</a>
         ))}
-      </ul>
-    </nav>
+      </div>
+    </>
   )
 }
 

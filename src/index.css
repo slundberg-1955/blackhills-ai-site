@@ -90,9 +90,42 @@ body {
 }
 .nav-cta:hover { background: var(--red) !important; color: var(--white) !important; }
 
+/* ── PORTAL BAR ── */
+.portal-bar {
+  position: fixed;
+  top: 72px;
+  left: 0; right: 0;
+  z-index: 199;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 60px;
+  background: var(--ink);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.portal-link {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.portal-link:hover {
+  color: var(--white);
+  border-color: var(--red);
+  background: rgba(224,64,64,0.12);
+}
+
 /* ── LAYOUT UTILITIES ── */
 .container { max-width: var(--max-w); margin: 0 auto; }
-.pt-nav { padding-top: 72px; }
+.pt-nav { padding-top: 108px; }
 
 section { padding: 100px 60px; position: relative; perspective: 1200px; }
 section > .container { max-width: var(--max-w); margin: 0 auto; }
@@ -387,7 +420,7 @@ h3.card-title {
 .hero-section {
   min-height: 100vh;
   display: flex; align-items: center;
-  padding: 120px 60px 80px;
+  padding: 150px 60px 80px;
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
@@ -1052,7 +1085,9 @@ h3.card-title {
   .nav-links a { font-size: 1.2rem; }
   .nav-cta { font-size: 1rem !important; }
 
-  .hero-section { padding: 100px 24px 60px; min-height: auto; }
+  .portal-bar { padding: 5px 12px; gap: 4px; flex-wrap: wrap; }
+  .portal-link { font-size: 0.55rem; padding: 3px 8px; }
+  .hero-section { padding: 140px 24px 60px; min-height: auto; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-stats { gap: 24px; flex-wrap: wrap; }
 
