@@ -56,48 +56,79 @@ export default function Home() {
 
           {/* RIGHT — architecture panel */}
           <div className="fade-up fade-up-3">
-            <div className="hero-panel">
-              <div className="hero-panel-header">
-                <div className="hp-dot" style={{ background: '#ff5f57' }} />
-                <div className="hp-dot" style={{ background: '#febc2e' }} />
-                <div className="hp-dot" style={{ background: '#28c840' }} />
-                <span style={{ marginLeft: 10, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>
-                  otto-hub / architecture
-                </span>
+            <div className="arch-diagram">
+              <div className="arch-section-label">Consumers</div>
+              <div className="arch-row">
+                <div className="arch-consumer">
+                  <div className="arch-tag">Otto Suite</div>
+                  <h3>Otto IP<span className="tm">™</span> Tools</h3>
+                </div>
+                <div className="arch-consumer">
+                  <div className="arch-tag">Custom Build</div>
+                  <h3>Your Custom AI</h3>
+                </div>
+                <div className="arch-consumer future">
+                  <div className="arch-tag">Ecosystem</div>
+                  <h3>Partner Apps</h3>
+                  <div className="arch-future-badge">Planned</div>
+                </div>
               </div>
-              <div className="hero-panel-body">
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', fontWeight: 600, letterSpacing: '0.1em', color: 'var(--ink-30)', textTransform: 'uppercase', marginBottom: 12 }}>Data Sources</div>
-                {[
-                  { icon: '⚡', label: 'USPTO Patent Center', sub: 'Real-time · sub-minute sync' },
-                  { icon: '📦', label: 'Your IPMS', sub: 'Anaqua · Foundation · CPI · AppColl · Patricia' },
-                  { icon: '📄', label: 'Your DMS', sub: 'Auto-route · split · merge · convert' },
-                  { icon: '📚', label: 'Patent Literature / NPL', sub: 'Prior art delivery pipeline' },
-                ].map(l => (
-                  <div key={l.label} className="hub-layer">
-                    <span className="hub-layer-icon">{l.icon}</span>
+              <div className="arch-connector-group">
+                <div className="arch-connector-line up" />
+                <div className="arch-connector-line up" />
+                <div className="arch-connector-line up" />
+              </div>
+              <div className="arch-hub-row">
+                <div className="arch-hub">
+                  <div className="arch-hub-header">
                     <div>
-                      <div style={{ fontWeight: 600, color: 'var(--ink)', fontSize: '0.82rem' }}>{l.label}</div>
-                      <div style={{ fontSize: '0.68rem', color: 'var(--ink-30)', marginTop: 2, fontFamily: 'var(--font-mono)', letterSpacing: '0.02em' }}>{l.sub}</div>
+                      <div className="arch-hub-title">Otto HUB<span><span className="tm">™</span></span></div>
+                      <div className="arch-hub-tagline">AI Enrichment · Data APIs · Document APIs</div>
+                    </div>
+                    <div className="arch-endpoint-pill">
+                      <div className="num">25+</div>
+                      <div className="label">Endpoints</div>
                     </div>
                   </div>
-                ))}
-                <div className="hub-arrow">▼</div>
-                <div className="hub-layer core-layer">
-                  <span style={{ fontSize: '1.15rem' }}>◆</span>
-                  <div>
-                    <div style={{ fontSize: '0.88rem', letterSpacing: '0.08em', fontWeight: 700 }}>OTTO HUB<span className="tm">™</span></div>
-                    <div style={{ fontSize: '0.68rem', opacity: 0.55, marginTop: 2, letterSpacing: '0.04em' }}>
-                      AI Enrichment · Data APIs · Document APIs
-                    </div>
+                  <div className="arch-hub-divider" />
+                  <div className="arch-badges">
+                    <div className="arch-badge">OAuth 2.0</div>
+                    <div className="arch-badge">OpenAPI</div>
+                    <div className="arch-badge">Metadata</div>
+                    <div className="arch-badge">Sub-min Sync</div>
                   </div>
-                </div>
-                <div className="hub-arrow">▼</div>
-                <div className="hub-output-grid">
-                  {['Otto IP™ Tools', 'Your Custom AI', 'Partner Apps'].map(t => (
-                    <div key={t} className="hub-output-item">{t}</div>
-                  ))}
                 </div>
               </div>
+              <div className="arch-connector-group">
+                <div className="arch-connector-line" />
+                <div className="arch-connector-line" />
+                <div className="arch-connector-line" />
+                <div className="arch-connector-line" />
+              </div>
+              <div className="arch-row">
+                <div className="arch-source">
+                  <div className="arch-live-label"><span className="arch-live-dot" />Live</div>
+                  <div className="arch-tag">Primary Feed</div>
+                  <h3>USPTO Patent Center</h3>
+                  <div className="detail">Real-time sync</div>
+                </div>
+                <div className="arch-source">
+                  <div className="arch-tag">IPMS Connector</div>
+                  <h3>Your IPMS</h3>
+                  <div className="detail">Anaqua · Foundation · CPI · AppColl</div>
+                </div>
+                <div className="arch-source">
+                  <div className="arch-tag">Doc Management</div>
+                  <h3>Your DMS</h3>
+                  <div className="detail">Auto-route · Split · Merge</div>
+                </div>
+                <div className="arch-source">
+                  <div className="arch-tag">Literature</div>
+                  <h3>Patent Lit / NPL</h3>
+                  <div className="detail">Prior art pipeline</div>
+                </div>
+              </div>
+              <div className="arch-section-label bottom">Data Sources</div>
             </div>
           </div>
         </div>
