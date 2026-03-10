@@ -16,7 +16,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter basename="/blackhills-ai-site">
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <ScrollToTop />
       <Nav />
       <main className="pt-nav">
