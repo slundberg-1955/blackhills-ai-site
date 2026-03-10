@@ -90,42 +90,60 @@ body {
 }
 .nav-cta:hover { background: var(--red) !important; color: var(--white) !important; }
 
-/* ── PORTAL BAR ── */
-.portal-bar {
-  position: fixed;
-  top: 72px;
-  left: 0; right: 0;
-  z-index: 199;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 6px 60px;
-  background: var(--ink);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* ── NAV LOG-INS DROPDOWN ── */
+.nav-logins {
+  position: relative;
 }
-.portal-link {
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  color: rgba(255,255,255,0.6);
-  text-decoration: none;
-  padding: 4px 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-.portal-link:hover {
+.nav-logins-btn {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   color: var(--white);
-  border-color: var(--red);
-  background: rgba(224,64,64,0.12);
+  background: var(--red);
+  border: none;
+  padding: 9px 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.nav-logins-btn:hover {
+  background: var(--red-light);
+}
+.nav-logins-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 220px;
+  background: var(--white);
+  border: 1px solid var(--ink-10);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  padding: 8px 0;
+  z-index: 300;
+  animation: dropIn 0.15s ease;
+}
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.nav-logins-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-50);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.nav-logins-dropdown a:hover {
+  background: var(--red-pale);
+  color: var(--ink);
 }
 
 /* ── LAYOUT UTILITIES ── */
 .container { max-width: var(--max-w); margin: 0 auto; }
-.pt-nav { padding-top: 108px; }
+.pt-nav { padding-top: 72px; }
 
 section { padding: 100px 60px; position: relative; perspective: 1200px; }
 section > .container { max-width: var(--max-w); margin: 0 auto; }
@@ -420,7 +438,7 @@ h3.card-title {
 .hero-section {
   min-height: 100vh;
   display: flex; align-items: center;
-  padding: 150px 60px 80px;
+  padding: 120px 60px 80px;
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, var(--white) 0%, var(--off-white) 100%);
@@ -1085,9 +1103,8 @@ h3.card-title {
   .nav-links a { font-size: 1.2rem; }
   .nav-cta { font-size: 1rem !important; }
 
-  .portal-bar { padding: 5px 12px; gap: 4px; flex-wrap: wrap; }
-  .portal-link { font-size: 0.55rem; padding: 3px 8px; }
-  .hero-section { padding: 140px 24px 60px; min-height: auto; }
+  .hero-section { padding: 100px 24px 60px; min-height: auto; }
+  .nav-logins-dropdown { right: -20px; min-width: 200px; }
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-stats { gap: 24px; flex-wrap: wrap; }
 

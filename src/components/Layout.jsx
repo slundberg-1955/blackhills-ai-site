@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 export function Nav() {
   const { pathname } = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [loginsOpen, setLoginsOpen] = useState(false)
   const links = [
     { to: '/', label: 'Home' },
     { to: '/otto-hub', label: 'Otto HUB' },
@@ -11,13 +12,6 @@ export function Nav() {
     { to: '/services', label: 'Services' },
     { to: '/contact', label: "Let's Talk" },
   ]
-
-  useEffect(() => { setMenuOpen(false) }, [pathname])
-
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : ''
-    return () => { document.body.style.overflow = '' }
-  }, [menuOpen])
 
   const portals = [
     { label: 'Otto Assistant™ Log-In', href: 'https://protect-us.mimecast.com/s/3q3MC73OWPFz8wYGs8erQY' },
@@ -27,36 +21,60 @@ export function Nav() {
     { label: 'Renewals Portal', href: 'https://blackhillsiprenewals.com/custom/bhipr/home.jsf' },
   ]
 
+  useEffect(() => { setMenuOpen(false); setLoginsOpen(false) }, [pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
+
+  useEffect(() => {
+    if (!loginsOpen) return
+    const close = (e) => {
+      if (!e.target.closest('.nav-logins')) setLoginsOpen(false)
+    }
+    document.addEventListener('click', close)
+    return () => document.removeEventListener('click', close)
+  }, [loginsOpen])
+
   return (
-    <>
-      <nav className="nav">
-        <Link to="/" className="nav-brand">
-          <span className="nav-brand-text">BLACKHILLS<span>AI</span></span>
-        </Link>
-        <button
-          className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(o => !o)}
-          aria-label="Toggle menu"
-        >
-          <span /><span /><span />
-        </button>
-        <ul className={`nav-links ${menuOpen ? 'nav-links--open' : ''}`}>
-          {links.map(l => (
-            <li key={l.to}>
-              <Link
-                to={l.to}
-                className={`${pathname === l.to ? 'active' : ''} ${l.to === '/contact' ? 'nav-cta' : ''}`}
-              >{l.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <div className="portal-bar">
-        {portals.map(p => (
-          <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer" className="portal-link">{p.label}</a>
+    <nav className="nav">
+      <Link to="/" className="nav-brand">
+        <span className="nav-brand-text">BLACKHILLS<span>AI</span></span>
+      </Link>
+      <button
+        className={`nav-hamburger ${menuOpen ? 'open' : ''}`}
+        onClick={() => setMenuOpen(o => !o)}
+        aria-label="Toggle menu"
+      >
+        <span /><span /><span />
+      </button>
+      <ul className={`nav-links ${menuOpen ? 'nav-links--open' : ''}`}>
+        {links.map(l => (
+          <li key={l.to}>
+            <Link
+              to={l.to}
+              className={`${pathname === l.to ? 'active' : ''} ${l.to === '/contact' ? 'nav-cta' : ''}`}
+            >{l.label}</Link>
+          </li>
         ))}
-      </div>
-    </>
+        <li className="nav-logins">
+          <button
+            className="nav-logins-btn"
+            onClick={(e) => { e.stopPropagation(); setLoginsOpen(o => !o) }}
+          >
+            Log-Ins ▾
+          </button>
+          {loginsOpen && (
+            <div className="nav-logins-dropdown">
+              {portals.map(p => (
+                <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer">{p.label}</a>
+              ))}
+            </div>
+          )}
+        </li>
+      </ul>
+    </nav>
   )
 }
 
