@@ -229,9 +229,10 @@ export default function Home() {
               <h2 className="section-title">The docketing engine<br/>that's <em>10,000× more accurate</em><br/>than gen AI alone</h2>
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 20 }}>
-                Generative AI achieves 97–99% accuracy on isolated tasks. Impressive for chat. 
-                Catastrophic for IP docketing — where a single error can mean lost patent rights, 
-                malpractice exposure, and seven-figure liability.
+                Generative AI achieves 97–99% accuracy on simple tasks but can behave unpredictably
+                as complexity increases. Impressive for chat. Catastrophic for complex IP docketing —
+                where a single error can mean lost patent rights, malpractice exposure, and
+                seven-figure liability.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
                 Black Hills AI's docketing engine combines deterministic rule engines with 
