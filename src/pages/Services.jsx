@@ -8,16 +8,14 @@ export default function Services() {
         <div className="hero-depth-dark" />
         <div className="hero-circuit" />
         <div className="hero-grid-perspective-dark" />
-        <div className="hero-datastream" />
-        <div className="hero-node" style={{ top: '20%', left: '65%', animationDelay: '-0.5s' }} />
-        <div className="hero-node" style={{ top: '75%', left: '30%', animationDelay: '-2s' }} />
+        <div className="hero-datastream-dark" />
         <div className="hero-glow-orb" style={{
           width: 300, height: 300, top: '10%', left: '60%',
-          background: 'rgba(224,64,64,0.08)'
+          background: 'rgba(255,255,255,0.04)'
         }} />
         <div className="hero-glow-orb" style={{
           width: 180, height: 180, bottom: '20%', left: '10%',
-          background: 'rgba(224,64,64,0.05)',
+          background: 'rgba(255,255,255,0.03)',
           animationDelay: '-5s'
         }} />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>

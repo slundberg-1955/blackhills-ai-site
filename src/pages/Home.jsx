@@ -9,12 +9,9 @@ export default function Home() {
         <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
         <div className="hero-datastream" />
-        <div className="hero-node hero-node-light" style={{ top: '18%', left: '12%', animationDelay: '0s' }} />
-        <div className="hero-node hero-node-light" style={{ top: '65%', left: '85%', animationDelay: '-1.5s' }} />
-        <div className="hero-node hero-node-light" style={{ top: '40%', left: '55%', animationDelay: '-2.5s' }} />
         <div className="hero-glow-orb" style={{
           width: 300, height: 300, top: '10%', left: '-5%',
-          background: 'rgba(224,64,64,0.06)'
+          background: 'rgba(0,0,0,0.04)'
         }} />
         <div className="hero-glow-orb" style={{
           width: 200, height: 200, bottom: '10%', right: '15%',

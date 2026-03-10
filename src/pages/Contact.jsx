@@ -18,10 +18,9 @@ export default function Contact() {
         <div className="hero-depth-light" />
         <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
-        <div className="hero-node hero-node-light" style={{ top: '30%', left: '75%', animationDelay: '-1s' }} />
         <div className="hero-glow-orb" style={{
           width: 260, height: 260, top: '20%', left: '70%',
-          background: 'rgba(224,64,64,0.05)'
+          background: 'rgba(0,0,0,0.04)'
         }} />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <div className="eyebrow">Contact</div>
