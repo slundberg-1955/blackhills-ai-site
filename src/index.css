@@ -441,17 +441,17 @@ h3.card-title {
   color: rgba(255,255,255,0.3);
 }
 
-/* ── FRACTAL BACKGROUND ── */
+/* ── LATENT SPACE / t-SNE BACKGROUND ── */
 
-/* Fractal — light pages */
+/* t-SNE — light pages */
 .hero-fractal {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
 }
 .hero-fractal::before {
   content: '';
   position: absolute; inset: -10%;
-  background: url('/fractal-bg-light.png') center/cover no-repeat;
-  opacity: 0.6;
+  background: url('/tsne-bg-light.png') center/cover no-repeat;
+  opacity: 0.7;
 }
 .hero-fractal::after {
   content: '';
@@ -459,15 +459,15 @@ h3.card-title {
   background: radial-gradient(ellipse 70% 60% at 50% 50%, transparent 30%, var(--off-white) 90%);
 }
 
-/* Fractal — dark pages */
+/* t-SNE — dark pages */
 .hero-fractal-dark {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
 }
 .hero-fractal-dark::before {
   content: '';
   position: absolute; inset: -10%;
-  background: url('/fractal-bg.png') center/cover no-repeat;
-  opacity: 0.7;
+  background: url('/tsne-bg-dark.png') center/cover no-repeat;
+  opacity: 0.8;
 }
 .hero-fractal-dark::after {
   content: '';
