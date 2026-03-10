@@ -148,11 +148,14 @@ export default function Home() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
                 {[
                   { n: '2009', label: 'Company founded — IP automation from day one' },
-                  { n: '2014', label: 'First deterministic docketing engine deployed' },
-                  { n: '2019', label: 'Otto IP™ web platform launched' },
-                  { n: '2022', label: 'Gen AI integration layer added to Otto HUB™' },
-                  { n: '2024', label: 'Otto HUB™ open API platform released' },
-                  { n: '2025', label: 'EOU scanning, file-transfer AI, Word add-in' },
+                  { n: '2011', label: 'Otto HUB™ platform integrated with IPMS and Patent Center' },
+                  { n: '2012', label: 'First deterministic docketing engine deployed' },
+                  { n: '2013', label: 'Start of large-scale fully automated docketing' },
+                  { n: '2020', label: 'Surpassed one million fully automated docketing transactions' },
+                  { n: '2023', label: 'Gen AI integration layer added to Otto HUB™' },
+                  { n: '2024', label: 'Launched Honu™ agent reporting platform' },
+                  { n: '2025', label: 'Launched first-ever automated EOU scanning and Otto IP™ AI drafting tools' },
+                  { n: '2026', label: 'Honu™ automated file transfer platform introduced' },
                 ].map((item, i) => (
                   <div key={i} className="numbered-feature">
                     <div className="nf-num">{item.n}</div>
