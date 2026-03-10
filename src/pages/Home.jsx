@@ -237,7 +237,7 @@ export default function Home() {
               <p className="body-text" style={{ marginBottom: 32 }}>
                 Black Hills AI's docketing engine combines deterministic rule engines with 
                 AI enrichment. The result: accuracy that approaches 100% — not through better 
-                prompting, but through architectural design that eliminates entire categories of error.
+                prompting, but through architectural design that eliminates entire categories of error and delivers unparalleled accuracy.
               </p>
               <Link to="/services" className="btn btn-dark">See How It Works</Link>
             </div>
