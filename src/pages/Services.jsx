@@ -8,7 +8,6 @@ export default function Services() {
         <div className="hero-depth-dark" />
         <div className="hero-circuit" />
         <div className="hero-grid-perspective-dark" />
-        <div className="hero-scanline" />
         <div className="hero-datastream" />
         <div className="hero-node" style={{ top: '20%', left: '65%', animationDelay: '-0.5s' }} />
         <div className="hero-node" style={{ top: '75%', left: '30%', animationDelay: '-2s' }} />

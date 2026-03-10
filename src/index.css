@@ -443,26 +443,6 @@ h3.card-title {
 
 /* ── HIGH-TECH DEPTH LAYERS ── */
 
-/* Scan line overlay — slow-moving horizontal line */
-.hero-scanline {
-  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
-}
-.hero-scanline::before {
-  content: '';
-  position: absolute;
-  left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(224,64,64,0.25) 20%, rgba(224,64,64,0.4) 50%, rgba(224,64,64,0.25) 80%, transparent 100%);
-  box-shadow: 0 0 20px 4px rgba(224,64,64,0.08), 0 0 60px 8px rgba(224,64,64,0.04);
-  animation: scanMove 6s linear infinite;
-}
-@keyframes scanMove {
-  0%   { top: -2px; opacity: 0; }
-  5%   { opacity: 1; }
-  95%  { opacity: 1; }
-  100% { top: 100%; opacity: 0; }
-}
-
 /* Horizontal data-stream lines — subtle animated dashes */
 .hero-datastream {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;

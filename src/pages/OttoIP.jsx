@@ -8,7 +8,6 @@ export default function OttoIP() {
         <div className="hero-depth-light" />
         <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
-        <div className="hero-scanline" />
         <div className="hero-node hero-node-light" style={{ top: '25%', left: '80%', animationDelay: '-0.5s' }} />
         <div className="hero-node hero-node-light" style={{ top: '60%', left: '15%', animationDelay: '-2s' }} />
         <div className="hero-glow-orb" style={{

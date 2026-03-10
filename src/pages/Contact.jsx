@@ -18,7 +18,6 @@ export default function Contact() {
         <div className="hero-depth-light" />
         <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
-        <div className="hero-scanline" />
         <div className="hero-node hero-node-light" style={{ top: '30%', left: '75%', animationDelay: '-1s' }} />
         <div className="hero-glow-orb" style={{
           width: 260, height: 260, top: '20%', left: '70%',

@@ -24,7 +24,6 @@ export default function OttoHub() {
         <div className="hero-depth-dark" />
         <div className="hero-circuit" />
         <div className="hero-grid-perspective-dark" />
-        <div className="hero-scanline" />
         <div className="hero-datastream" />
         <div className="hero-node" style={{ top: '22%', left: '75%', animationDelay: '0s' }} />
         <div className="hero-node" style={{ top: '70%', left: '20%', animationDelay: '-1s' }} />

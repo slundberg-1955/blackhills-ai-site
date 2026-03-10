@@ -8,7 +8,6 @@ export default function Home() {
         <div className="hero-depth-light" />
         <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
-        <div className="hero-scanline" />
         <div className="hero-datastream" />
         <div className="hero-node hero-node-light" style={{ top: '18%', left: '12%', animationDelay: '0s' }} />
         <div className="hero-node hero-node-light" style={{ top: '65%', left: '85%', animationDelay: '-1.5s' }} />
