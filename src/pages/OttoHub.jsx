@@ -1,0 +1,258 @@
+import { Link } from 'react-router-dom'
+
+const endpoints = [
+  { fn: 'getFileHistory()', desc: 'Full prosecution history for any US application', benefit: 'Instant access — no scraping' },
+  { fn: 'getPendingClaims()', desc: 'Current claim set from prosecution record', benefit: 'Always-current for AI workflows' },
+  { fn: 'getRejectionRefs()', desc: 'Office action rejections with cited prior art', benefit: 'Structured data, AI-ready' },
+  { fn: 'getPriorityFamily()', desc: 'Full priority chain for any application', benefit: 'Continuity mapping & visualization' },
+  { fn: 'getFileHistoryDoc()', desc: 'Retrieve any document as PDF, DOCX, or XML', benefit: 'Any format, any document' },
+  { fn: 'loadDocumentToDMS()', desc: 'Push file history documents to your DMS', benefit: 'Zero-touch document automation' },
+  { fn: 'getOfficeActionSummary()', desc: 'AI-generated summary of any office action', benefit: 'Structured JSON for LLM pipelines' },
+  { fn: 'getClaimDelta()', desc: 'Track claim changes across prosecution', benefit: 'Amendment history on demand' },
+  { fn: 'getIPMSRecord()', desc: 'Enriched matter record from your IPMS', benefit: 'Cross-reference with USPTO data' },
+  { fn: 'getAIAnalysis()', desc: 'AI-powered analysis layer on raw data', benefit: 'Actionable intelligence, not raw JSON' },
+  { fn: 'searchPriorArt()', desc: 'Patent & NPL prior art retrieval', benefit: 'Delivered, structured, ready' },
+  { fn: 'getDocumentQueue()', desc: 'Pending document operations & routing status', benefit: 'Full DMS pipeline visibility' },
+  { fn: 'getNOADetails()', desc: 'Notice of Allowance with AI compliance check', benefit: 'Allowance review, automated' },
+]
+
+export default function OttoHub() {
+  return (
+    <>
+      {/* HERO */}
+      <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
+        <div style={{
+          position: 'absolute', inset: 0, pointerEvents: 'none',
+          backgroundImage: 'linear-gradient(rgba(224,64,64,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(224,64,64,0.04) 1px, transparent 1px)',
+          backgroundSize: '48px 48px'
+        }} />
+        <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
+          <div className="eyebrow" style={{ color: 'var(--red-light)' }}>Core Platform</div>
+          <h1 className="display" style={{ color: 'var(--white)', maxWidth: 760 }}>
+            Otto HUB™<br /><em>The unified IP<br/>intelligence layer</em>
+          </h1>
+          <p className="lead" style={{ color: 'rgba(255,255,255,0.55)', marginTop: 28, maxWidth: 600 }}>
+            One powerful API layer. Every IP data source you depend on.
+            Real-time, AI-enriched, and ready to build on.
+          </p>
+          <div style={{ display: 'flex', gap: 14, marginTop: 40, flexWrap: 'wrap' }}>
+            <Link to="/contact" className="btn btn-gold">Request API Access</Link>
+            <Link to="/contact" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>
+              Talk to an Engineer
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY OTTO HUB */}
+      <section>
+        <div className="container">
+          <div className="eyebrow">Why Otto HUB™</div>
+          <h2 className="section-title">Not a wrapper.<br/><em>A platform.</em></h2>
+          <div className="gold-rule" />
+          <div className="four-col" style={{ marginTop: 48 }}>
+            {[
+              { icon: '⚡', title: 'Real-Time Data Sync', desc: 'Direct Patent Center integration delivers Office Actions, allowances, and new filings the moment they appear at the USPTO. Sub-minute latency.' },
+              { icon: '🤖', title: 'AI-Native by Design', desc: 'Every endpoint returns structured JSON engineered for LLM workflows. Built-in AI Summary and Analysis functions layer intelligence directly onto raw data.' },
+              { icon: '📁', title: 'Full Data Enrichment', desc: "Otto HUB doesn't just pass through raw Patent Center data — it enriches it with structured parsing, IPMS cross-referencing, and AI analysis layers." },
+              { icon: '🔒', title: 'Enterprise Security', desc: 'OAuth 2.0 authentication, scoped API keys, US-based infrastructure, and zero data retention. BYOK option available.' },
+            ].map(f => (
+              <div key={f.title} className="card">
+                <div style={{ fontSize: '1.8rem', marginBottom: 16 }}>{f.icon}</div>
+                <h4 style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem', color: 'var(--ink)', marginBottom: 8 }}>{f.title}</h4>
+                <p className="body-text">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ARCHITECTURE */}
+      <section className="bg-cream">
+        <div className="container">
+          <div className="two-col">
+            <div>
+              <div className="eyebrow">Architecture</div>
+              <h2 className="section-title">Four data sources.<br/>One <em>intelligence layer.</em></h2>
+              <div className="gold-rule" />
+              <p className="body-text" style={{ marginBottom: 24 }}>
+                Otto HUB sits as a unified data intelligence layer over USPTO Patent Center, 
+                your existing IPMS, your Document Management System, and Patent/Non-Patent Literature 
+                sources — enriching and enhancing all four with AI-powered analysis and a rich document 
+                and data API layer.
+              </p>
+              <p className="body-text" style={{ marginBottom: 32 }}>
+                Use our built-in <strong>Otto IP™ tools</strong> out of the box, or build your own 
+                AI-powered workflows on the same foundation using Claude Code, Cursor, Windsurf, 
+                n8n, Zapier, or any REST client.
+              </p>
+              <ul className="check-list">
+                <li>Full OpenAPI spec included</li>
+                <li>Python and Node.js SDKs</li>
+                <li>Sandbox environment for development</li>
+                <li>Compatible with every major AI coding platform</li>
+                <li>No proprietary SDK required for IPMS integration</li>
+              </ul>
+            </div>
+            <div>
+              <div className="hero-panel" style={{ border: '1px solid var(--ink-10)' }}>
+                <div className="hero-panel-header">
+                  <div className="hp-dot" style={{ background: '#ff5f57' }} />
+                  <div className="hp-dot" style={{ background: '#febc2e' }} />
+                  <div className="hp-dot" style={{ background: '#28c840' }} />
+                  <span style={{ marginLeft: 10, fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>
+                    otto-hub / data-flow
+                  </span>
+                </div>
+                <div className="hero-panel-body">
+                  {[
+                    { icon: '⚡', label: 'USPTO Patent Center', sub: 'Real-time prosecution data · Office Actions · NOAs · File histories' },
+                    { icon: '🗂', label: 'Your IPMS', sub: 'Matter records · Dockets · Deadlines · Billing data' },
+                    { icon: '📄', label: 'Your DMS', sub: 'Auto-routing · Renaming · PDF/DOCX/XML support' },
+                    { icon: '📚', label: 'Patent & NPL Literature', sub: 'Prior art retrieval & delivery pipeline' },
+                  ].map(l => (
+                    <div key={l.label} className="hub-layer">
+                      <span className="hub-layer-icon">{l.icon}</span>
+                      <div>
+                        <div style={{ fontWeight: 500, color: 'var(--ink)', fontSize: '0.82rem' }}>{l.label}</div>
+                        <div style={{ fontSize: '0.68rem', color: 'var(--ink-30)', marginTop: 1 }}>{l.sub}</div>
+                      </div>
+                    </div>
+                  ))}
+                  <div className="hub-arrow" style={{ color: 'var(--ink-30)' }}>▼</div>
+                  <div className="hub-layer core-layer">
+                    <span style={{ fontSize: '1.1rem' }}>🔶</span>
+                    <div>
+                      <div style={{ fontSize: '0.9rem', letterSpacing: '0.06em', fontWeight: 600 }}>OTTO HUB™ AI ENRICHMENT LAYER</div>
+                      <div style={{ fontSize: '0.68rem', opacity: 0.65, marginTop: 1 }}>
+                        AI Analysis · Data APIs · Document APIs · Custom Platform
+                      </div>
+                    </div>
+                  </div>
+                  <div className="hub-arrow" style={{ color: 'var(--ink-30)' }}>▼</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginTop: 4 }}>
+                    {['Otto IP™ Web', 'Otto IP™ Word', 'Your Custom AI', 'Partner Apps'].map(t => (
+                      <div key={t} style={{
+                        padding: '10px 8px', border: '1px solid var(--ink-10)',
+                        fontSize: '0.7rem', color: 'var(--ink-50)', textAlign: 'center',
+                        fontFamily: 'var(--font-mono)', background: 'var(--white)'
+                      }}>{t}</div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OPEN PLATFORM */}
+      <section>
+        <div className="container">
+          <div className="two-col" style={{ alignItems: 'start' }}>
+            <div>
+              <div className="eyebrow">Open Platform</div>
+              <h2 className="section-title">Build your own AI tools.<br/><em>It's easier than you think.</em></h2>
+              <div className="gold-rule" />
+              <p className="body-text" style={{ marginBottom: 24 }}>
+                Modern AI coding platforms like <strong>Claude Code</strong>, <strong>Cursor</strong>, 
+                and <strong>Windsurf</strong> make it possible for your team to build custom IP automation 
+                tools in days, not months — on top of production-grade IP data infrastructure.
+              </p>
+              <p className="body-text" style={{ marginBottom: 32 }}>
+                Otto HUB's open APIs give your developers — or your AI coding agent — 
+                real-time USPTO data, enriched matter records, and full document operations 
+                through clean REST endpoints. No vendor lock-in. No proprietary SDK required.
+              </p>
+              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 32 }}>
+                {['Claude Code', 'Cursor', 'Windsurf', 'n8n', 'Zapier', 'Any REST client'].map(t => (
+                  <span key={t} style={{
+                    padding: '5px 12px', border: '1px solid var(--ink-10)',
+                    fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--ink-50)'
+                  }}>{t}</span>
+                ))}
+              </div>
+              <Link to="/contact" className="btn btn-dark">Get API Access</Link>
+            </div>
+            <div>
+              <div className="code-snippet">
+                <div className="c-comment"># Build a custom office action reviewer in minutes</div>
+                <div className="c-comment"># Using Otto HUB™ + Claude Code</div>
+                <br/>
+                <div><span className="c-key">import</span> otto_hub <span className="c-key">as</span> hub</div>
+                <div><span className="c-key">from</span> anthropic <span className="c-key">import</span> Anthropic</div>
+                <br/>
+                <div className="c-comment"># Fetch real-time prosecution data</div>
+                <div>rejection = hub.<span className="c-fn">getRejectionRefs</span>(</div>
+                <div>  app_number=<span className="c-string">"18/123,456"</span></div>
+                <div>)</div>
+                <br/>
+                <div className="c-comment"># Run AI analysis on structured data</div>
+                <div>client = Anthropic()</div>
+                <div>analysis = client.messages.<span className="c-fn">create</span>(</div>
+                <div>  model=<span className="c-string">"claude-sonnet-4-5"</span>,</div>
+                <div>{'  messages=[{'}</div>
+                <div>{'    '}<span className="c-string">"role"</span>{': '}<span className="c-string">"user"</span>,</div>
+                <div>{'    '}<span className="c-string">"content"</span>{': f'}<span className="c-string">"Analyze: {'{rejection}'}"</span></div>
+                <div>{'  }]'}</div>
+                <div>)</div>
+                <br/>
+                <div className="c-comment"># Push results to your DMS automatically</div>
+                <div>hub.<span className="c-fn">loadDocumentToDMS</span>(analysis, app_number)</div>
+              </div>
+              <div style={{ marginTop: 16, padding: '14px 20px', background: 'var(--red-pale)', border: '1px solid var(--red)', fontSize: '0.78rem', color: 'var(--ink-50)', lineHeight: 1.6 }}>
+                ✦ Full Python & Node.js SDKs available · OpenAPI spec included · Sandbox environment
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ENDPOINTS TABLE */}
+      <section className="bg-cream">
+        <div className="container">
+          <div className="eyebrow">API Reference</div>
+          <h2 className="section-title">13 production endpoints.<br/><em>All the data you need.</em></h2>
+          <div className="gold-rule" />
+          <div style={{ marginTop: 48, border: '1px solid var(--ink-10)', background: 'var(--white)', overflowX: 'auto' }}>
+            <table className="endpoint-table">
+              <thead>
+                <tr>
+                  <th>Function</th>
+                  <th>Description</th>
+                  <th>Key Benefit</th>
+                </tr>
+              </thead>
+              <tbody>
+                {endpoints.map(e => (
+                  <tr key={e.fn}>
+                    <td>{e.fn}</td>
+                    <td>{e.desc}</td>
+                    <td>{e.benefit}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ marginTop: 16, fontSize: '0.75rem', color: 'var(--ink-30)' }}>
+            OAuth 2.0 authentication · Structured JSON responses · Full sandbox environment included
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <div className="callout-band">
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <h2>Ready to build on <em>real IP data</em>?</h2>
+          <p>Talk to our team about API access, custom integrations, or a guided demo of what you can build.</p>
+          <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/contact" className="btn btn-gold">Request API Access</Link>
+            <Link to="/otto-ip" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>
+              See Otto IP Suite →
+            </Link>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
