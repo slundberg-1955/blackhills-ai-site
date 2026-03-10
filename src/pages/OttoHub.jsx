@@ -22,7 +22,13 @@ export default function OttoHub() {
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
         <div className="hero-depth-dark" />
+        <div className="hero-circuit" />
         <div className="hero-grid-perspective-dark" />
+        <div className="hero-scanline" />
+        <div className="hero-datastream" />
+        <div className="hero-node" style={{ top: '22%', left: '75%', animationDelay: '0s' }} />
+        <div className="hero-node" style={{ top: '70%', left: '20%', animationDelay: '-1s' }} />
+        <div className="hero-node" style={{ top: '45%', left: '50%', animationDelay: '-2s' }} />
         <div className="hero-glow-orb" style={{
           width: 350, height: 350, top: '5%', right: '-8%',
           background: 'rgba(224,64,64,0.1)'

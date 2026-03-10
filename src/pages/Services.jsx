@@ -6,7 +6,12 @@ export default function Services() {
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
         <div className="hero-depth-dark" />
+        <div className="hero-circuit" />
         <div className="hero-grid-perspective-dark" />
+        <div className="hero-scanline" />
+        <div className="hero-datastream" />
+        <div className="hero-node" style={{ top: '20%', left: '65%', animationDelay: '-0.5s' }} />
+        <div className="hero-node" style={{ top: '75%', left: '30%', animationDelay: '-2s' }} />
         <div className="hero-glow-orb" style={{
           width: 300, height: 300, top: '10%', left: '60%',
           background: 'rgba(224,64,64,0.08)'

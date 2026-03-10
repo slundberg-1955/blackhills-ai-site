@@ -6,7 +6,11 @@ export default function OttoIP() {
       {/* HERO */}
       <section style={{ background: 'var(--off-white)', padding: '140px 60px 100px', borderBottom: '1px solid var(--ink-10)', position: 'relative', overflow: 'hidden' }}>
         <div className="hero-depth-light" />
+        <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
+        <div className="hero-scanline" />
+        <div className="hero-node hero-node-light" style={{ top: '25%', left: '80%', animationDelay: '-0.5s' }} />
+        <div className="hero-node hero-node-light" style={{ top: '60%', left: '15%', animationDelay: '-2s' }} />
         <div className="hero-glow-orb" style={{
           width: 280, height: 280, top: '15%', right: '5%',
           background: 'rgba(224,64,64,0.05)'

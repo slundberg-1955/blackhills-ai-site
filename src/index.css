@@ -441,56 +441,169 @@ h3.card-title {
   color: rgba(255,255,255,0.3);
 }
 
-/* ── DEPTH LAYERS (CSS-only atmospheric depth) ── */
-.hero-depth-light {
-  position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+/* ── HIGH-TECH DEPTH LAYERS ── */
+
+/* Scan line overlay — slow-moving horizontal line */
+.hero-scanline {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
 }
-.hero-depth-light::before {
+.hero-scanline::before {
   content: '';
   position: absolute;
-  width: 140%;
-  height: 140%;
-  top: -30%;
-  left: -20%;
-  background:
-    radial-gradient(ellipse 600px 400px at 15% 20%, rgba(224,64,64,0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 500px 500px at 85% 70%, rgba(201,168,76,0.04) 0%, transparent 70%),
-    radial-gradient(ellipse 800px 300px at 50% 100%, rgba(0,0,0,0.03) 0%, transparent 60%);
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(224,64,64,0.25) 20%, rgba(224,64,64,0.4) 50%, rgba(224,64,64,0.25) 80%, transparent 100%);
+  box-shadow: 0 0 20px 4px rgba(224,64,64,0.08), 0 0 60px 8px rgba(224,64,64,0.04);
+  animation: scanMove 6s linear infinite;
 }
-.hero-depth-light::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, transparent 0%, transparent 60%, rgba(0,0,0,0.02) 100%);
+@keyframes scanMove {
+  0%   { top: -2px; opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
 }
 
-.hero-depth-dark {
-  position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+/* Horizontal data-stream lines — subtle animated dashes */
+.hero-datastream {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
 }
-.hero-depth-dark::before {
+.hero-datastream::before,
+.hero-datastream::after {
   content: '';
   position: absolute;
-  width: 150%;
-  height: 150%;
-  top: -25%;
-  left: -25%;
-  background:
-    radial-gradient(ellipse 600px 500px at 20% 30%, rgba(224,64,64,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 400px 400px at 80% 20%, rgba(42,42,60,0.3) 0%, transparent 60%),
-    radial-gradient(ellipse 700px 400px at 60% 90%, rgba(224,64,64,0.04) 0%, transparent 50%);
+  height: 1px;
+  width: 200%;
+  left: -50%;
 }
-.hero-depth-dark::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 120px;
-  background: linear-gradient(to top, rgba(0,0,0,0.15), transparent);
+.hero-datastream::before {
+  top: 30%;
+  background: repeating-linear-gradient(90deg,
+    transparent 0px, transparent 20px,
+    rgba(224,64,64,0.12) 20px, rgba(224,64,64,0.12) 28px,
+    transparent 28px, transparent 60px);
+  animation: streamFlow 12s linear infinite;
+}
+.hero-datastream::after {
+  top: 70%;
+  background: repeating-linear-gradient(90deg,
+    transparent 0px, transparent 30px,
+    rgba(201,168,76,0.08) 30px, rgba(201,168,76,0.08) 36px,
+    transparent 36px, transparent 80px);
+  animation: streamFlow 18s linear infinite reverse;
+}
+@keyframes streamFlow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(50%); }
 }
 
+/* Circuit grid — angled repeating lines with node dots */
+.hero-circuit {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
+}
+.hero-circuit::before {
+  content: '';
+  position: absolute; inset: -20%;
+  background-image:
+    radial-gradient(circle 2px, rgba(224,64,64,0.18) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(224,64,64,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(224,64,64,0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 10%, transparent 70%);
+}
+.hero-circuit::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(224,64,64,0.05) 49%, rgba(224,64,64,0.05) 51%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(224,64,64,0.03) 49%, rgba(224,64,64,0.03) 51%, transparent 52%);
+  background-size: 80px 80px;
+}
+
+/* Light variant — lower opacity circuit for light backgrounds */
+.hero-circuit-light {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
+}
+.hero-circuit-light::before {
+  content: '';
+  position: absolute; inset: -20%;
+  background-image:
+    radial-gradient(circle 1.5px, rgba(17,17,17,0.1) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(17,17,17,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17,17,17,0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 10%, transparent 70%);
+}
+.hero-circuit-light::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(45deg, transparent 48%, rgba(17,17,17,0.025) 49%, rgba(17,17,17,0.025) 51%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(17,17,17,0.015) 49%, rgba(17,17,17,0.015) 51%, transparent 52%);
+  background-size: 80px 80px;
+}
+
+/* Pulsing node — animated dot that glows */
+.hero-node {
+  position: absolute;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+.hero-node::before {
+  content: '';
+  position: absolute; inset: -2px;
+  border-radius: 50%;
+  background: rgba(224,64,64,0.6);
+  animation: nodePulse 3s ease-in-out infinite;
+}
+.hero-node::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 24px; height: 24px;
+  margin: -12px 0 0 -12px;
+  border-radius: 50%;
+  border: 1px solid rgba(224,64,64,0.15);
+  animation: nodeRing 3s ease-in-out infinite;
+}
+@keyframes nodePulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; box-shadow: 0 0 6px rgba(224,64,64,0.3); }
+  50%      { transform: scale(1.4); opacity: 1; box-shadow: 0 0 16px rgba(224,64,64,0.5); }
+}
+@keyframes nodeRing {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50%      { transform: scale(1.6); opacity: 0; }
+}
+
+/* Light-variant node */
+.hero-node-light::before {
+  background: rgba(224,64,64,0.4);
+}
+.hero-node-light::after {
+  border-color: rgba(224,64,64,0.1);
+}
+
+/* Glow orb — kept but upgraded with sharper look */
+.hero-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: orbFloat 8s ease-in-out infinite;
+  z-index: 0;
+}
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(10px, -15px) scale(1.05); }
+}
+
+/* Perspective grid — receding into the distance */
 .hero-grid-perspective {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden;
-  perspective: 600px;
+  perspective: 600px; z-index: 0;
 }
 .hero-grid-perspective::before {
   content: '';
@@ -508,7 +621,7 @@ h3.card-title {
 
 .hero-grid-perspective-dark {
   position: absolute; inset: 0; pointer-events: none; overflow: hidden;
-  perspective: 600px;
+  perspective: 600px; z-index: 0;
 }
 .hero-grid-perspective-dark::before {
   content: '';
@@ -524,16 +637,32 @@ h3.card-title {
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 80%, black 20%, transparent 70%);
 }
 
-.hero-glow-orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
-  animation: orbFloat 8s ease-in-out infinite;
+/* Radial glow layers */
+.hero-depth-light {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
 }
-@keyframes orbFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(10px, -15px) scale(1.05); }
+.hero-depth-light::before {
+  content: '';
+  position: absolute; width: 140%; height: 140%; top: -30%; left: -20%;
+  background:
+    radial-gradient(ellipse 500px 350px at 15% 20%, rgba(224,64,64,0.05) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 400px at 85% 70%, rgba(201,168,76,0.03) 0%, transparent 70%);
+}
+
+.hero-depth-dark {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0;
+}
+.hero-depth-dark::before {
+  content: '';
+  position: absolute; width: 150%; height: 150%; top: -25%; left: -25%;
+  background:
+    radial-gradient(ellipse 600px 500px at 20% 30%, rgba(224,64,64,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 400px 400px at 80% 20%, rgba(42,42,60,0.25) 0%, transparent 60%);
+}
+.hero-depth-dark::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 120px;
+  background: linear-gradient(to top, rgba(0,0,0,0.15), transparent);
 }
 
 /* ── PAGE-SPECIFIC: HERO ── */

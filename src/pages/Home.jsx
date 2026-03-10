@@ -6,14 +6,20 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero-section">
         <div className="hero-depth-light" />
+        <div className="hero-circuit-light" />
         <div className="hero-grid-perspective" />
+        <div className="hero-scanline" />
+        <div className="hero-datastream" />
+        <div className="hero-node hero-node-light" style={{ top: '18%', left: '12%', animationDelay: '0s' }} />
+        <div className="hero-node hero-node-light" style={{ top: '65%', left: '85%', animationDelay: '-1.5s' }} />
+        <div className="hero-node hero-node-light" style={{ top: '40%', left: '55%', animationDelay: '-2.5s' }} />
         <div className="hero-glow-orb" style={{
           width: 300, height: 300, top: '10%', left: '-5%',
-          background: 'rgba(224,64,64,0.07)'
+          background: 'rgba(224,64,64,0.06)'
         }} />
         <div className="hero-glow-orb" style={{
-          width: 250, height: 250, bottom: '5%', right: '10%',
-          background: 'rgba(201,168,76,0.05)',
+          width: 200, height: 200, bottom: '10%', right: '15%',
+          background: 'rgba(201,168,76,0.04)',
           animationDelay: '-3s'
         }} />
         <div className="hero-grid" style={{ position: 'relative', zIndex: 1 }}>
