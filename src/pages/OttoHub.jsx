@@ -36,7 +36,7 @@ export default function OttoHub() {
             Real-time, AI-enriched, and ready to build on.
           </p>
           <div style={{ display: 'flex', gap: 14, marginTop: 40, flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-gold">Request API Access</Link>
+            <Link to="/contact" className="btn btn-gold">Get Otto HUB</Link>
             <Link to="/contact" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>
               Talk to an Engineer
             </Link>
