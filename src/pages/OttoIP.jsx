@@ -8,11 +8,11 @@ export default function OttoIP() {
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div className="eyebrow">IP Tools</div>
           <h1 className="display" style={{ maxWidth: 760 }}>
-            Otto IP™ Suite<br /><em>AI tools built by<br/>IP attorneys.</em>
+            Otto IP<span className="tm">™</span> Suite<br /><em>AI tools built by<br/>IP attorneys.</em>
           </h1>
           <p className="lead" style={{ marginTop: 28 }}>
             The Otto IP Suite is a set of AI-powered tools for patent and trademark prosecution, 
-            built on top of Otto HUB™ by attorneys who practice IP law every day.
+            built on top of Otto HUB<span className="tm">™</span> by attorneys who practice IP law every day.
           </p>
           <div style={{ display: 'flex', gap: 14, marginTop: 44, flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-dark">Request a Demo</Link>
@@ -33,7 +33,7 @@ export default function OttoIP() {
             <div className="card card-gold-top" style={{ padding: 48 }}>
               <div className="tag" style={{ marginBottom: 24 }}>Web Application</div>
               <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', fontWeight: 700, color: 'var(--ink)', marginBottom: 16, lineHeight: 1.1 }}>
-                Otto IP™ Web
+                Otto IP<span className="tm">™</span> Web
               </h3>
               <p className="body-text" style={{ marginBottom: 28 }}>
                 A full-featured IP management and prosecution tool accessible from any browser.
@@ -56,10 +56,10 @@ export default function OttoIP() {
             <div className="card card-gold-top" style={{ padding: 48 }}>
               <div className="tag" style={{ marginBottom: 24 }}>Microsoft Word Add-In</div>
               <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', fontWeight: 700, color: 'var(--ink)', marginBottom: 16, lineHeight: 1.1 }}>
-                Otto IP™ for Word
+                Otto IP<span className="tm">™</span> for Word
               </h3>
               <p className="body-text" style={{ marginBottom: 28 }}>
-                Bring the full power of Otto HUB™ directly into Microsoft Word — where most 
+                Bring the full power of Otto HUB<span className="tm">™</span> directly into Microsoft Word — where most 
                 IP attorneys already spend their day. Draft, analyze, and prosecute without 
                 leaving your document.
               </p>
@@ -136,7 +136,7 @@ export default function OttoIP() {
         <div className="container" style={{ maxWidth: 780 }}>
           <div className="testimonial" style={{ padding: '48px 56px' }}>
             <blockquote style={{ fontSize: '1.35rem' }}>
-              "Otto IP™ has sped our patent drafting process and produced higher quality drafts."
+              "Otto IP<span className="tm">™</span> has sped our patent drafting process and produced higher quality drafts."
             </blockquote>
             <cite>— Managing Partner, AmLaw 200 IP Practice</cite>
           </div>

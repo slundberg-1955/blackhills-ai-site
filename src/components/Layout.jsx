@@ -53,7 +53,7 @@ export function Footer() {
           <div>
             <div className="footer-brand-name">BLACKHILLS<span>AI</span></div>
             <p className="footer-tagline">
-              AI automation for intellectual property — built by IP attorneys, powered by Otto HUB™. 
+              AI automation for intellectual property — built by IP attorneys, powered by Otto HUB<span className="tm">™</span>. 
               Doing AI before AI was a thing since 2009.
             </p>
             <Link to="/contact" className="btn btn-gold" style={{ fontSize: '0.75rem' }}>Schedule a Demo</Link>
@@ -61,7 +61,7 @@ export function Footer() {
           <div className="footer-col">
             <h5>Platform</h5>
             <ul>
-              <li><Link to="/otto-hub">Otto HUB™</Link></li>
+              <li><Link to="/otto-hub">Otto HUB<span className="tm">™</span></Link></li>
               <li><Link to="/otto-ip">Otto IP Suite</Link></li>
               <li><Link to="/otto-ip">Otto IP Web</Link></li>
               <li><Link to="/otto-ip">Otto IP for Word</Link></li>
@@ -90,7 +90,7 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <p>© 2026 Black Hills AI. All rights reserved.</p>
-          <p>Otto HUB™, Otto IP™, Honu™, DocketSaver™ are trademarks of Black Hills AI.</p>
+          <p>Otto HUB<span className="tm">™</span>, Otto IP<span className="tm">™</span>, Honu<span className="tm">™</span>, DocketSaver<span className="tm">™</span> are trademarks of Black Hills AI.</p>
         </div>
       </div>
     </footer>

@@ -29,7 +29,7 @@ export default function OttoHub() {
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
           <div className="eyebrow" style={{ color: 'var(--red-light)' }}>Core Platform</div>
           <h1 className="display" style={{ color: 'var(--white)', maxWidth: 760 }}>
-            Otto HUB™<br /><em>The unified IP<br/>intelligence layer</em>
+            Otto HUB<span className="tm">™</span><br /><em>The unified IP<br/>intelligence layer</em>
           </h1>
           <p className="lead" style={{ color: 'rgba(255,255,255,0.55)', marginTop: 28, maxWidth: 600 }}>
             One powerful API layer. Every IP data source you depend on.
@@ -47,7 +47,7 @@ export default function OttoHub() {
       {/* WHY OTTO HUB */}
       <section>
         <div className="container">
-          <div className="eyebrow">Why Otto HUB™</div>
+          <div className="eyebrow">Why Otto HUB<span className="tm">™</span></div>
           <h2 className="section-title">Not a wrapper.<br/><em>A platform.</em></h2>
           <div className="gold-rule" />
           <div className="four-col" style={{ marginTop: 48 }}>
@@ -82,7 +82,7 @@ export default function OttoHub() {
                 analysis and a rich document and data API layer.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
-                Use our built-in <strong>Otto IP™ tools</strong> out of the box, or build your own 
+                Use our built-in <strong>Otto IP<span className="tm">™</span> tools</strong> out of the box, or build your own 
                 AI-powered workflows on the same foundation using Claude Code, Cursor, Windsurf, 
                 n8n, Zapier, or any REST client.
               </p>
@@ -123,7 +123,7 @@ export default function OttoHub() {
                   <div className="hub-layer core-layer">
                     <span style={{ fontSize: '1.1rem' }}>🔶</span>
                     <div>
-                      <div style={{ fontSize: '0.9rem', letterSpacing: '0.06em', fontWeight: 600 }}>OTTO HUB™ AI ENRICHMENT LAYER</div>
+                      <div style={{ fontSize: '0.9rem', letterSpacing: '0.06em', fontWeight: 600 }}>OTTO HUB<span className="tm">™</span> AI ENRICHMENT LAYER</div>
                       <div style={{ fontSize: '0.68rem', opacity: 0.65, marginTop: 1 }}>
                         AI Analysis · Data APIs · Document APIs · Custom Platform
                       </div>
@@ -177,7 +177,7 @@ export default function OttoHub() {
             <div>
               <div className="code-snippet">
                 <div className="c-comment"># Build a custom office action reviewer in minutes</div>
-                <div className="c-comment"># Using Otto HUB™ + Claude Code</div>
+                <div className="c-comment"># Using Otto HUB<span className="tm">™</span> + Claude Code</div>
                 <br/>
                 <div><span className="c-key">import</span> otto_hub <span className="c-key">as</span> hub</div>
                 <div><span className="c-key">from</span> anthropic <span className="c-key">import</span> Anthropic</div>

@@ -29,12 +29,12 @@ export default function Home() {
 
             <p className="lead fade-up fade-up-3" style={{ marginTop: 28 }}>
               Black Hills AI has spent over 15 years building automation infrastructure for intellectual property.
-              Our <strong>Otto HUB™</strong> platform powers everything — from our own Otto IP tools to
+              Our <strong>Otto HUB<span className="tm">™</span></strong> platform powers everything — from our own Otto IP tools to
               the custom AI workflows your team builds on our open APIs.
             </p>
 
             <div className="hero-actions fade-up fade-up-4">
-              <Link to="/otto-hub" className="btn btn-dark">Explore Otto HUB™</Link>
+              <Link to="/otto-hub" className="btn btn-dark">Explore Otto HUB<span className="tm">™</span></Link>
               <Link to="/contact" className="btn btn-outline">Schedule a Demo</Link>
             </div>
 
@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="hub-layer core-layer">
                   <span className="hub-layer-icon">🔶</span>
                   <div>
-                    <div style={{ fontSize: '0.85rem', letterSpacing: '0.06em' }}>OTTO HUB™</div>
+                    <div style={{ fontSize: '0.85rem', letterSpacing: '0.06em' }}>OTTO HUB<span className="tm">™</span></div>
                     <div style={{ fontSize: '0.68rem', opacity: 0.65, marginTop: 1 }}>
                       AI Enrichment · Data APIs · Document APIs
                     </div>
@@ -139,11 +139,11 @@ export default function Home() {
               <p className="body-text" style={{ marginBottom: 32 }}>
                 When generative AI arrived, we didn't pivot — we integrated it as a layer
                 underneath and on top of the deterministic foundation that actually makes automation reliable.
-                That architecture is called <strong>Otto HUB™</strong>. It's the reason our
+                That architecture is called <strong>Otto HUB<span className="tm">™</span></strong>. It's the reason our
                 fully automated docketing percentages are over 95% of volume with accuracy that
                 is thousands of times better than our competitors.
               </p>
-              <Link to="/otto-hub" className="btn btn-ghost">Learn about Otto HUB™</Link>
+              <Link to="/otto-hub" className="btn btn-ghost">Learn about Otto HUB<span className="tm">™</span></Link>
             </div>
             <div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -303,7 +303,7 @@ export default function Home() {
           </p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-gold">Schedule a Demo</Link>
-            <Link to="/otto-hub" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>Explore Otto HUB™</Link>
+            <Link to="/otto-hub" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>Explore Otto HUB<span className="tm">™</span></Link>
           </div>
         </div>
       </div>

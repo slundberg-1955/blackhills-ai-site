@@ -28,6 +28,8 @@
 
 html { scroll-behavior: smooth; }
 
+.tm { font-size: 0.55em; vertical-align: super; line-height: 0; }
+
 body {
   font-family: var(--font-body);
   background: var(--white);

@@ -12,7 +12,7 @@ export default function Services() {
           </h1>
           <p className="lead" style={{ color: 'rgba(255,255,255,0.55)', marginTop: 28, maxWidth: 600 }}>
             Docketing. Renewals. File transfers. Outsourcing. Every service we offer runs 
-            on Otto HUB™ — with accuracy and automation levels no other IP services firm can match.
+            on Otto HUB<span className="tm">™</span> — with accuracy and automation levels no other IP services firm can match.
           </p>
         </div>
       </section>
@@ -43,8 +43,8 @@ export default function Services() {
               </p>
               <ul className="check-list" style={{ marginBottom: 32 }}>
                 <li>Automated patent & trademark docketing (US & foreign)</li>
-                <li>DocketSaver™ — backup & verification layer</li>
-                <li>DualDocket™ — dual-system cross-checking</li>
+                <li>DocketSaver<span className="tm">™</span> — backup & verification layer</li>
+                <li>DualDocket<span className="tm">™</span> — dual-system cross-checking</li>
                 <li>Patent Center status change alerts</li>
                 <li>Integrations: Anaqua, Foundation IP, CPI, AppColl, Patricia, AltLegal, Memotech</li>
               </ul>
@@ -122,7 +122,7 @@ export default function Services() {
                 renewal services firm has built.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
-                Our renewal platform integrates directly with Otto HUB™ for real-time portfolio 
+                Our renewal platform integrates directly with Otto HUB<span className="tm">™</span> for real-time portfolio 
                 monitoring, automated deadline alerting, and AI-driven evidence scanning before 
                 every renewal decision — turning maintenance from a cost center into a strategic function.
               </p>
@@ -155,7 +155,7 @@ export default function Services() {
                 Inconsistent formats. Gaps in prosecution history. Mismatched docketing data.
               </p>
               <p className="body-text" style={{ marginBottom: 20 }}>
-                BHAI's Honu™ file transfer service uses AI-powered field mapping and bidirectional 
+                BHAI's Honu<span className="tm">™</span> file transfer service uses AI-powered field mapping and bidirectional 
                 data verification to automate the opening and transfer of patent and trademark files 
                 between IP organizations — with accuracy that manual processes can't match.
               </p>
@@ -171,12 +171,12 @@ export default function Services() {
                 <li>Foreign patent portfolio onboarding — multi-jurisdiction</li>
                 <li>Full audit trail and exception reporting</li>
               </ul>
-              <Link to="/contact" className="btn btn-dark">Learn About Honu™</Link>
+              <Link to="/contact" className="btn btn-dark">Learn About Honu<span className="tm">™</span></Link>
             </div>
             <div>
               <div style={{ background: 'var(--off-white)', border: '1px solid var(--ink-10)', padding: 40 }}>
                 <div style={{ fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--ink-30)', marginBottom: 24 }}>
-                  Honu™ File Transfer Process
+                  Honu<span className="tm">™</span> File Transfer Process
                 </div>
                 {[
                   { n: '01', title: 'Data Ingestion', desc: 'Receive files from any source system in any format — spreadsheet, docketing export, document bundle.' },
@@ -250,7 +250,7 @@ export default function Services() {
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link to="/contact" className="btn btn-gold">Schedule a Consultation</Link>
             <Link to="/otto-hub" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>
-              Explore Otto HUB™
+              Explore Otto HUB<span className="tm">™</span>
             </Link>
           </div>
         </div>
