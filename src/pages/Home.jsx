@@ -149,7 +149,7 @@ export default function Home() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
                 {[
                   { n: '2009', label: 'Company founded — IP automation from day one' },
-                  { n: '2011', label: 'Otto HUB™ platform integrated with IPMS and Patent Center' },
+                  { n: '2011', label: 'Otto HUB™ platform integrated with first IPMS\'s and Patent Center' },
                   { n: '2012', label: 'First deterministic docketing engine deployed' },
                   { n: '2013', label: 'Start of large-scale fully automated docketing' },
                   { n: '2015', label: 'Full API integration with all leading API-enabled IP management systems' },
