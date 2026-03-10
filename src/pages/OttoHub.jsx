@@ -73,13 +73,13 @@ export default function OttoHub() {
           <div className="two-col">
             <div>
               <div className="eyebrow">Architecture</div>
-              <h2 className="section-title">Four data sources.<br/>One <em>intelligence layer.</em></h2>
+              <h2 className="section-title">Five data sources.<br/>One <em>intelligence layer.</em></h2>
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 24 }}>
                 Otto HUB sits as a unified data intelligence layer over USPTO Patent Center, 
-                your existing IPMS, your Document Management System, and Patent/Non-Patent Literature 
-                sources — enriching and enhancing all four with AI-powered analysis and a rich document 
-                and data API layer.
+                your existing IPMS, your Document Management System, Patent/Non-Patent Literature 
+                sources, and rich IP metadata — enriching and enhancing all five with AI-powered 
+                analysis and a rich document and data API layer.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
                 Use our built-in <strong>Otto IP™ tools</strong> out of the box, or build your own 
@@ -88,10 +88,9 @@ export default function OttoHub() {
               </p>
               <ul className="check-list">
                 <li>Full OpenAPI spec included</li>
-                <li>Python and Node.js SDKs</li>
                 <li>Sandbox environment for development</li>
                 <li>Compatible with every major AI coding platform</li>
-                <li>No proprietary SDK required for IPMS integration</li>
+                <li>No proprietary lock-in for IPMS integration</li>
               </ul>
             </div>
             <div>
@@ -110,6 +109,7 @@ export default function OttoHub() {
                     { icon: '🗂', label: 'Your IPMS', sub: 'Matter records · Dockets · Deadlines · Billing data' },
                     { icon: '📄', label: 'Your DMS', sub: 'Auto-routing · Renaming · PDF/DOCX/XML support' },
                     { icon: '📚', label: 'Patent & NPL Literature', sub: 'Prior art retrieval & delivery pipeline' },
+                    { icon: '🏷', label: 'Rich IP Metadata', sub: 'Enriched data layers · Classification · Entity mapping' },
                   ].map(l => (
                     <div key={l.label} className="hub-layer">
                       <span className="hub-layer-icon">{l.icon}</span>
