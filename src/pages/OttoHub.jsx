@@ -212,7 +212,7 @@ export default function OttoHub() {
       <section className="bg-cream">
         <div className="container">
           <div className="eyebrow">API Reference</div>
-          <h2 className="section-title">13 production endpoints.<br/><em>All the data you need.</em></h2>
+          <h2 className="section-title">Example production endpoints.<br/><em>All the data you need.</em></h2>
           <div className="gold-rule" />
           <div style={{ marginTop: 48, border: '1px solid var(--ink-10)', background: 'var(--white)', overflowX: 'auto' }}>
             <table className="endpoint-table">
