@@ -246,7 +246,7 @@ export default function OttoHub() {
           <h2>Ready to build on <em>real IP data</em>?</h2>
           <p>Talk to our team about API access, custom integrations, or a guided demo of what you can build.</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link to="/contact" className="btn btn-gold">Request API Access</Link>
+            <Link to="/contact" className="btn btn-gold">Request HUB Access</Link>
             <Link to="/otto-ip" className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,0.2)', color: 'var(--white)' }}>
               See Otto IP Suite →
             </Link>
