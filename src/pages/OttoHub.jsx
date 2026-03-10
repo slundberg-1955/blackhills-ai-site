@@ -21,10 +21,16 @@ export default function OttoHub() {
     <>
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
-        <div style={{
-          position: 'absolute', inset: 0, pointerEvents: 'none',
-          backgroundImage: 'linear-gradient(rgba(224,64,64,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(224,64,64,0.04) 1px, transparent 1px)',
-          backgroundSize: '48px 48px'
+        <div className="hero-depth-dark" />
+        <div className="hero-grid-perspective-dark" />
+        <div className="hero-glow-orb" style={{
+          width: 350, height: 350, top: '5%', right: '-8%',
+          background: 'rgba(224,64,64,0.1)'
+        }} />
+        <div className="hero-glow-orb" style={{
+          width: 200, height: 200, bottom: '15%', left: '5%',
+          background: 'rgba(224,64,64,0.06)',
+          animationDelay: '-4s'
         }} />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
           <div className="eyebrow" style={{ color: 'var(--red-light)' }}>Core Platform</div>

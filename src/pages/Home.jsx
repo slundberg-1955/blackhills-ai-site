@@ -4,12 +4,17 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ── */}
-      <section className="hero-section" style={{ background: 'var(--white)' }}>
-        {/* subtle dot-grid bg */}
-        <div style={{
-          position: 'absolute', inset: 0, pointerEvents: 'none',
-          backgroundImage: 'radial-gradient(circle, #d0cac0 1px, transparent 1px)',
-          backgroundSize: '28px 28px', opacity: 0.35
+      <section className="hero-section">
+        <div className="hero-depth-light" />
+        <div className="hero-grid-perspective" />
+        <div className="hero-glow-orb" style={{
+          width: 300, height: 300, top: '10%', left: '-5%',
+          background: 'rgba(224,64,64,0.07)'
+        }} />
+        <div className="hero-glow-orb" style={{
+          width: 250, height: 250, bottom: '5%', right: '10%',
+          background: 'rgba(201,168,76,0.05)',
+          animationDelay: '-3s'
         }} />
         <div className="hero-grid" style={{ position: 'relative', zIndex: 1 }}>
           {/* LEFT */}
