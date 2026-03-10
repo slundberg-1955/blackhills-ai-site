@@ -866,38 +866,34 @@ h3.card-title {
   box-shadow: 0 4px 16px rgba(0,0,0,0.04);
 }
 
-/* ── NUMBERED FEATURE ── */
+/* ── NUMBERED FEATURE / TIMELINE ── */
 .numbered-feature {
-  display: flex; gap: 24px;
-  padding: 28px;
-  border-bottom: none;
-  margin-bottom: 12px;
-  background: var(--white);
-  border-radius: 8px;
-  border: 1px solid var(--ink-10);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.03);
-  transition: all 0.2s ease;
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--ink-10);
+  background: transparent;
+  transition: background 0.15s ease;
 }
+.numbered-feature:last-child { border-bottom: none; }
 .numbered-feature:hover {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-  transform: translateY(-2px);
+  background: var(--off-white);
 }
 .nf-num {
   font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--ink-10);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--red);
   line-height: 1;
   flex-shrink: 0;
-  min-width: 56px;
+  min-width: 40px;
 }
 .nf-content h4 {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
-.nf-content p { font-size: 0.85rem; color: var(--ink-50); line-height: 1.65; }
+.nf-content p { font-size: 0.82rem; color: var(--ink-50); line-height: 1.5; }
 
 /* ── SUBTLE GRID BG ── */
 .bg-grid {

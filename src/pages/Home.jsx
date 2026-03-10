@@ -170,28 +170,26 @@ export default function Home() {
               </p>
               <Link to="/otto-hub" className="btn btn-ghost">Learn about Otto HUB<span className="tm">™</span></Link>
             </div>
-            <div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-                {[
-                  { n: '2009', label: 'Company founded — IP automation from day one' },
-                  { n: '2011', label: 'Otto HUB™ platform integrated with first IPMS\'s and Patent Center' },
-                  { n: '2012', label: 'First deterministic docketing engine deployed' },
-                  { n: '2013', label: 'Start of large-scale fully automated docketing' },
-                  { n: '2015', label: 'Full API integration with all leading API-enabled IP management systems' },
-                  { n: '2020', label: 'Surpassed one million fully automated docketing transactions' },
-                  { n: '2024', label: 'Gen AI features introduced to Otto HUB™' },
-                  { n: '2024', label: 'Launched Otto IP™ generative AI patent drafting solution and Honu™ agent reporting platform' },
-                  { n: '2025', label: 'Launched first-ever automated EOU scanning and Otto IP™ AI drafting tools' },
-                  { n: '2026', label: 'Honu™ automated file transfer platform introduced' },
-                ].map((item, i) => (
-                  <div key={i} className="numbered-feature">
-                    <div className="nf-num">{item.n}</div>
-                    <div className="nf-content" style={{ paddingTop: 6 }}>
-                      <p>{item.label}</p>
-                    </div>
+            <div style={{ background: 'var(--white)', borderRadius: 8, border: '1px solid var(--ink-10)', boxShadow: '0 2px 8px rgba(0,0,0,0.04)', overflow: 'hidden' }}>
+              {[
+                { n: '2009', label: 'Company founded — IP automation from day one' },
+                { n: '2011', label: 'Otto HUB™ platform integrated with first IPMS\'s and Patent Center' },
+                { n: '2012', label: 'First deterministic docketing engine deployed' },
+                { n: '2013', label: 'Start of large-scale fully automated docketing' },
+                { n: '2015', label: 'Full API integration with all leading API-enabled IP management systems' },
+                { n: '2020', label: 'Surpassed one million fully automated docketing transactions' },
+                { n: '2024', label: 'Gen AI features introduced to Otto HUB™' },
+                { n: '2024', label: 'Launched Otto IP™ generative AI patent drafting solution and Honu™ agent reporting platform' },
+                { n: '2025', label: 'Launched first-ever automated EOU scanning and Otto IP™ AI drafting tools' },
+                { n: '2026', label: 'Honu™ automated file transfer platform introduced' },
+              ].map((item, i) => (
+                <div key={i} className="numbered-feature">
+                  <div className="nf-num">{item.n}</div>
+                  <div className="nf-content">
+                    <p>{item.label}</p>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
