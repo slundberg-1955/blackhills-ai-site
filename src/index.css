@@ -578,7 +578,7 @@ h3.card-title {
 .arch-hub-title span { color: var(--red); }
 .arch-hub-tagline {
   font-size: 11px;
-  color: var(--ink-30);
+  color: rgba(255,255,255,0.55);
   margin-top: 3px;
   font-family: var(--font-mono);
   letter-spacing: 0.06em;
@@ -600,7 +600,7 @@ h3.card-title {
 }
 .arch-endpoint-pill .label {
   font-size: 9px;
-  color: var(--ink-30);
+  color: rgba(255,255,255,0.5);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-family: var(--font-mono);
@@ -623,9 +623,9 @@ h3.card-title {
   letter-spacing: 0.08em;
   padding: 4px 10px;
   border-radius: 4px;
-  background: rgba(224,64,64,0.08);
-  border: 1px solid rgba(224,64,64,0.25);
-  color: var(--red-light);
+  background: rgba(224,64,64,0.12);
+  border: 1px solid rgba(224,64,64,0.35);
+  color: #f0908a;
   text-transform: uppercase;
 }
 
