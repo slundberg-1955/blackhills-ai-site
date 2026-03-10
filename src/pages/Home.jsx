@@ -65,7 +65,7 @@ export default function Home() {
                 </div>
                 <div className="arch-consumer">
                   <div className="arch-tag">Automation</div>
-                  <h3>Tools, Docketing and Analysis</h3>
+                  <h3>Tools/Process</h3>
                 </div>
                 <div className="arch-consumer">
                   <div className="arch-tag">Custom Build</div>
