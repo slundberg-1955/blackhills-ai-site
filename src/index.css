@@ -444,8 +444,7 @@ h3.card-title {
   box-shadow: 0 4px 16px rgba(224,64,64,0.08);
 }
 .arch-consumer.future {
-  border-color: var(--ink-10);
-  opacity: 0.55;
+  border-color: var(--red);
 }
 .arch-consumer .arch-tag {
   font-family: var(--font-mono);
@@ -455,14 +454,14 @@ h3.card-title {
   color: var(--red);
   margin-bottom: 5px;
 }
-.arch-consumer.future .arch-tag { color: var(--ink-30); }
+.arch-consumer.future .arch-tag { color: var(--red); }
 .arch-consumer h3 {
   font-size: 13px;
   font-weight: 700;
   color: var(--ink);
   line-height: 1.3;
 }
-.arch-consumer.future h3 { color: var(--ink-30); }
+.arch-consumer.future h3 { color: var(--ink); }
 .arch-future-badge {
   display: inline-block;
   margin-top: 6px;
