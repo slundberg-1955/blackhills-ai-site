@@ -317,6 +317,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── CLIENT PORTALS ── */}
+      <section style={{ background: 'var(--ink)', padding: '32px 60px' }}>
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+          {[
+            { label: 'Otto Assistant™ Log-In', href: 'https://protect-us.mimecast.com/s/3q3MC73OWPFz8wYGs8erQY' },
+            { label: 'Otto IP™ Log-In', href: 'https://filehistory.blackhillsip.com/?chat=true' },
+            { label: 'Client Portal', href: 'https://portal.blackhillsip.com/' },
+            { label: 'Honu Portal', href: 'https://honu.blackhillsip.com/' },
+            { label: 'Renewals Portal', href: 'https://blackhillsiprenewals.com/custom/bhipr/home.jsf' },
+          ].map(l => (
+            <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" className="btn btn-red" style={{ fontSize: '0.72rem', padding: '10px 20px' }}>
+              {l.label}
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* ── BOTTOM CTA ── */}
       <div className="callout-band">
         <div style={{ maxWidth: 1200, margin: '0 auto' }}>
