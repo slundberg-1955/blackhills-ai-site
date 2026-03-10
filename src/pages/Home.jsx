@@ -137,10 +137,11 @@ export default function Home() {
                 what it costs to get it wrong.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
-                When generative AI arrived, we didn't pivot — we integrated it as a layer on
-                top of the deterministic foundation that actually makes automation reliable.
+                When generative AI arrived, we didn't pivot — we integrated it as a layer
+                underneath and on top of the deterministic foundation that actually makes automation reliable.
                 That architecture is called <strong>Otto HUB™</strong>. It's the reason our
-                accuracy numbers are categorically different from every other vendor in the market.
+                fully automated docketing percentages are over 95% of volume with accuracy that
+                is thousands of times better than our competitors.
               </p>
               <Link to="/otto-hub" className="btn btn-ghost">Learn about Otto HUB™</Link>
             </div>
