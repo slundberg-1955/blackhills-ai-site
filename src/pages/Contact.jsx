@@ -15,13 +15,8 @@ export default function Contact() {
     <>
       {/* HEADER */}
       <section style={{ background: 'var(--off-white)', padding: '140px 60px 80px', borderBottom: '1px solid var(--ink-10)', position: 'relative', overflow: 'hidden' }}>
-        <div className="hero-depth-light" />
-        <div className="hero-circuit-light" />
-        <div className="hero-grid-perspective" />
-        <div className="hero-glow-orb" style={{
-          width: 260, height: 260, top: '20%', left: '70%',
-          background: 'rgba(0,0,0,0.04)'
-        }} />
+        <div className="hero-quasar" />
+        <div className="hero-quasar-jets" />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <div className="eyebrow">Contact</div>
           <h1 className="display" style={{ maxWidth: 680 }}>

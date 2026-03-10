@@ -21,19 +21,8 @@ export default function OttoHub() {
     <>
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
-        <div className="hero-depth-dark" />
-        <div className="hero-circuit" />
-        <div className="hero-grid-perspective-dark" />
-        <div className="hero-datastream-dark" />
-        <div className="hero-glow-orb" style={{
-          width: 350, height: 350, top: '5%', right: '-8%',
-          background: 'rgba(255,255,255,0.04)'
-        }} />
-        <div className="hero-glow-orb" style={{
-          width: 200, height: 200, bottom: '15%', left: '5%',
-          background: 'rgba(255,255,255,0.03)',
-          animationDelay: '-4s'
-        }} />
+        <div className="hero-quasar-dark" />
+        <div className="hero-quasar-jets-dark" />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
           <div className="eyebrow" style={{ color: 'var(--red-light)' }}>Core Platform</div>
           <h1 className="display" style={{ color: 'var(--white)', maxWidth: 760 }}>

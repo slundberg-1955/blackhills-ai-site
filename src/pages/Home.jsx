@@ -5,19 +5,8 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="hero-section">
-        <div className="hero-depth-light" />
-        <div className="hero-circuit-light" />
-        <div className="hero-grid-perspective" />
-        <div className="hero-datastream" />
-        <div className="hero-glow-orb" style={{
-          width: 300, height: 300, top: '10%', left: '-5%',
-          background: 'rgba(0,0,0,0.04)'
-        }} />
-        <div className="hero-glow-orb" style={{
-          width: 200, height: 200, bottom: '10%', right: '15%',
-          background: 'rgba(201,168,76,0.04)',
-          animationDelay: '-3s'
-        }} />
+        <div className="hero-quasar" />
+        <div className="hero-quasar-jets" />
         <div className="hero-grid" style={{ position: 'relative', zIndex: 1 }}>
           {/* LEFT */}
           <div>

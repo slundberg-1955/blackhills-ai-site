@@ -5,19 +5,8 @@ export default function Services() {
     <>
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
-        <div className="hero-depth-dark" />
-        <div className="hero-circuit" />
-        <div className="hero-grid-perspective-dark" />
-        <div className="hero-datastream-dark" />
-        <div className="hero-glow-orb" style={{
-          width: 300, height: 300, top: '10%', left: '60%',
-          background: 'rgba(255,255,255,0.04)'
-        }} />
-        <div className="hero-glow-orb" style={{
-          width: 180, height: 180, bottom: '20%', left: '10%',
-          background: 'rgba(255,255,255,0.03)',
-          animationDelay: '-5s'
-        }} />
+        <div className="hero-quasar-dark" />
+        <div className="hero-quasar-jets-dark" />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <div className="eyebrow" style={{ color: 'var(--red-light)' }}>IP Services</div>
           <h1 className="display" style={{ color: 'var(--white)', maxWidth: 760 }}>
