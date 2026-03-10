@@ -11,4 +11,7 @@ const spa404Plugin = () => ({
   }
 })
 
-export default defineConfig({ plugins: [react(), spa404Plugin()] })
+export default defineConfig({
+  base: '/blackhills-ai-site/',
+  plugins: [react(), spa404Plugin()]
+})

@@ -16,7 +16,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/blackhills-ai-site">
       <ScrollToTop />
       <Nav />
       <main className="pt-nav">
