@@ -103,7 +103,7 @@ export default function OttoHub() {
                 </div>
                 <div className="arch-consumer">
                   <div className="arch-tag">Automation</div>
-                  <h3>Docketing Automation</h3>
+                  <h3>Tools, Docketing and Analysis</h3>
                 </div>
                 <div className="arch-consumer">
                   <div className="arch-tag">Custom Build</div>

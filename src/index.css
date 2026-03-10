@@ -625,8 +625,9 @@ h3.card-title {
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.01em;
+  text-shadow: 0 1px 8px rgba(255,255,255,0.15);
 }
-.arch-hub-title span { color: var(--red); }
+.arch-hub-title span { color: #ff8080; }
 .arch-hub-tagline {
   font-size: 11px;
   color: rgba(255,255,255,0.75);
