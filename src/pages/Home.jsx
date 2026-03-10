@@ -64,6 +64,10 @@ export default function Home() {
                   <h3>Otto IP<span className="tm">™</span> Tools</h3>
                 </div>
                 <div className="arch-consumer">
+                  <div className="arch-tag">Automation</div>
+                  <h3>Docketing Automation</h3>
+                </div>
+                <div className="arch-consumer">
                   <div className="arch-tag">Custom Build</div>
                   <h3>Your Custom AI</h3>
                 </div>
@@ -74,6 +78,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="arch-connector-group">
+                <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
