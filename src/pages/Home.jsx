@@ -48,7 +48,7 @@ export default function Home() {
                 <div className="l">Docketing accuracy<br/>vs. gen AI alone</div>
               </div>
               <div className="hero-stat-item">
-                <div className="n">13</div>
+                <div className="n">25<span>+</span></div>
                 <div className="l">Live API<br/>endpoints</div>
               </div>
             </div>
@@ -185,8 +185,8 @@ export default function Home() {
               {
                 tag: 'Platform',
                 title: 'Otto HUB™',
-                desc: 'The open data and API layer that powers every Black Hills AI product — and your own custom AI tools. Real-time USPTO data, AI enrichment, 13 REST endpoints, full SDK.',
-                bullets: ['13 live API endpoints', 'Real-time Patent Center sync', 'Python & Node.js SDKs', 'Build with Claude, Cursor, Windsurf'],
+                desc: 'The open data and API layer that powers every Black Hills AI product — and your own custom AI tools. Real-time USPTO data, AI enrichment, 25+ REST endpoints, full SDK.',
+                bullets: ['25+ live API endpoints', 'Real-time Patent Center sync', 'Python & Node.js SDKs', 'Build with Claude, Cursor, Windsurf'],
                 link: '/otto-hub',
                 cta: 'Explore the Platform',
               },
