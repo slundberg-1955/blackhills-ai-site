@@ -117,7 +117,7 @@ export default function OttoIP() {
             {[
               { title: 'Patent Drafting Wizard', desc: 'Guided step-by-step patent application drafting with integrated Draw.io diagramming studio and dual-panel interface.' },
               { title: 'Office Action Analyzer', desc: 'Three-panel layout: OA viewer, AI analysis, argument generator. Structured rejection extraction with cited art display.' },
-              { title: 'AI Automations and Tools', desc: 'Automated patent application shells, AI-powered office action and prior art analysis, automated notice of allowance review, and intelligent specification and claims proofing.' },
+              { title: 'AI Automations and Tools', desc: 'Automated patent application shells, automated notice of allowance review, and intelligent specification and claims proofing.' },
               { title: 'IDS Automation', desc: 'Playwright-based USPTO IDS filing automation. Collect, format, and submit information disclosure statements automatically.' },
               { title: 'Docketing Verification', desc: 'High-density docketing verification interface. AI-powered completeness checking with flagging for manual review.' },
               { title: 'Foreign Prosecution', desc: 'Multi-jurisdiction support: USPTO, EPO, CNIPA, KIPO, JPO, Taiwan IPO. P-code annotation mappings for all jurisdictions.' },
