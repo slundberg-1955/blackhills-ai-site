@@ -21,8 +21,7 @@ export default function OttoHub() {
     <>
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
-        <div className="hero-quasar-dark" />
-        <div className="hero-quasar-jets-dark" />
+        <div className="hero-fractal-dark" />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative' }}>
           <div className="eyebrow" style={{ color: 'var(--red-light)' }}>Core Platform</div>
           <h1 className="display" style={{ color: 'var(--white)', maxWidth: 760 }}>

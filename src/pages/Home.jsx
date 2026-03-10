@@ -5,8 +5,7 @@ export default function Home() {
     <>
       {/* ── HERO ── */}
       <section className="hero-section">
-        <div className="hero-quasar" />
-        <div className="hero-quasar-jets" />
+        <div className="hero-fractal" />
         <div className="hero-grid" style={{ position: 'relative', zIndex: 1 }}>
           {/* LEFT */}
           <div>
