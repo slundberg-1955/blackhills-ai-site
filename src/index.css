@@ -84,6 +84,7 @@ body {
   background: var(--ink) !important;
   color: var(--white) !important;
   padding: 9px 22px !important;
+  border-radius: 8px !important;
   font-weight: 600 !important;
   letter-spacing: 0.05em !important;
   transition: background 0.2s !important;
