@@ -254,7 +254,7 @@ export default function Home() {
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 20 }}>
                 Industry-standard IP docketing demands better than 99.9% accuracy. Generative AI delivers 
-                roughly 95% on simple tasks — and under 66% on complex ones. Catastrophic for complex IP docketing —
+                roughly 95% on simple tasks — and under 66% on complex ones. Good enough for chat, but catastrophic for IP docketing —
                 where a single error can erode client trust and mean lost patent rights, malpractice exposure, and
                 seven-figure liability.
               </p>
