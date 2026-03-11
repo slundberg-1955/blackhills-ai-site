@@ -267,10 +267,8 @@ export default function Home() {
               <Link to="/services" className="btn btn-dark">See How It Works</Link>
             </div>
             <div>
-              <div style={{ background: 'var(--off-white)', padding: 40, border: '1px solid var(--ink-10)' }}>
-                <div style={{ fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--ink-30)', marginBottom: 28 }}>
-                  Docketing Accuracy Comparison
-                </div>
+              <div className="acc-panel">
+                <div className="acc-panel-title">Docketing Accuracy Comparison</div>
                 {[
                   { label: 'Gen AI alone (best case)', pct: 99, cls: 'fill-ok', display: '~99%' },
                   { label: 'AI docketing bolt-ons', pct: 90, cls: 'fill-bad', display: '~90%' },
@@ -278,17 +276,17 @@ export default function Home() {
                 ].map(b => (
                   <div key={b.label} className="acc-bar-group">
                     <div className="acc-bar-label">
-                      <span>{b.label}</span>
-                      <span style={{ fontWeight: 600, color: 'var(--ink)' }}>{b.display}</span>
+                      <span className="acc-name">{b.label}</span>
+                      <span className="acc-pct">{b.display}</span>
                     </div>
                     <div className="acc-bar-track">
                       <div className={`acc-bar-fill ${b.cls}`} style={{ width: `${b.pct}%` }} />
                     </div>
                   </div>
                 ))}
-                <div style={{ marginTop: 32, padding: '16px 20px', background: 'var(--red-pale)', borderLeft: '3px solid var(--red)' }}>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--ink-50)', lineHeight: 1.6 }}>
-                    At 90% accuracy on 10,000 docketing events per year, that's <strong style={{ color: 'var(--ink)' }}>1,000 errors annually</strong> — 
+                <div className="acc-callout">
+                  <p>
+                    At 90% accuracy on 10,000 docketing events per year, that's <strong>1,000 errors annually</strong> — 
                     roughly 20 per week requiring human review. That is not automation.
                   </p>
                 </div>
