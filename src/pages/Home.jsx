@@ -95,6 +95,7 @@ export default function Home() {
                     <div className="arch-badge">OpenAPI</div>
                     <div className="arch-badge">Metadata</div>
                     <div className="arch-badge">LLM APIs</div>
+                    <div className="arch-badge">MCP Endpoints</div>
                     <div className="arch-badge">Sub-min Sync</div>
                   </div>
                 </div>
