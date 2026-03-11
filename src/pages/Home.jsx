@@ -253,40 +253,40 @@ export default function Home() {
               <h2 className="section-title">The docketing engine<br/>that's <em>10,000× more accurate</em><br/>than gen AI alone</h2>
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 20 }}>
-                Generative AI handles language brilliantly. But IP docketing isn't a language task.
-                Industry-standard IP docketing demands better than 99.9% accuracy. Generative AI delivers 
-                roughly 95% on simple language tasks — but under 50% on complex docketing. Good enough for chat, but catastrophic for IP docketing —
-                where a single error can erode client trust and mean lost patent rights, malpractice exposure, and
-                seven-figure liability.
+                Generative AI achieves 97–99% accuracy on isolated tasks. Impressive for chat. 
+                Catastrophic for IP docketing — where a single error can mean lost patent rights, 
+                malpractice exposure, and seven-figure liability.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
                 Black Hills AI's docketing engine combines deterministic rule engines with 
-                AI enrichment. The result: Swiss watch precision and accuracy that approaches 100% — not through better 
-                prompting, but through architectural design that enforces docketing perfection and delivers unparalleled accuracy.
+                AI enrichment. The result: accuracy that approaches 100% — not through better 
+                prompting, but through architectural design that eliminates entire categories of error.
               </p>
               <Link to="/services" className="btn btn-dark">See How It Works</Link>
             </div>
             <div>
-              <div className="acc-panel">
-                <div className="acc-panel-title">Docketing Accuracy Comparison</div>
+              <div style={{ background: 'var(--off-white)', padding: 40, border: '1px solid var(--ink-10)' }}>
+                <div style={{ fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--ink-30)', marginBottom: 28 }}>
+                  Docketing Accuracy Comparison
+                </div>
                 {[
-                  { label: 'Gen AI (alone) best case trustworthy outcomes', pct: 25, cls: 'fill-ok', display: '<25%' },
-                  { label: 'AI docketing bolt-ons — trusted unsupervised automation', pct: 15, cls: 'fill-bad', display: '<15%' },
+                  { label: 'Gen AI alone (best case)', pct: 99, cls: 'fill-ok', display: '~99%' },
+                  { label: 'AI docketing bolt-ons', pct: 90, cls: 'fill-bad', display: '~90%' },
                   { label: 'BHAI docketing engine', pct: 100, cls: 'fill-bhai', display: '≈100%' },
                 ].map(b => (
                   <div key={b.label} className="acc-bar-group">
                     <div className="acc-bar-label">
-                      <span className="acc-name">{b.label}</span>
-                      <span className="acc-pct">{b.display}</span>
+                      <span>{b.label}</span>
+                      <span style={{ fontWeight: 600, color: 'var(--ink)' }}>{b.display}</span>
                     </div>
                     <div className="acc-bar-track">
                       <div className={`acc-bar-fill ${b.cls}`} style={{ width: `${b.pct}%` }} />
                     </div>
                   </div>
                 ))}
-                <div className="acc-callout">
-                  <p>
-                    At 90% accuracy on 10,000 docketing events per year, that's <strong>1,000 errors annually</strong> — 
+                <div style={{ marginTop: 32, padding: '16px 20px', background: 'var(--red-pale)', borderLeft: '3px solid var(--red)' }}>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--ink-50)', lineHeight: 1.6 }}>
+                    At 90% accuracy on 10,000 docketing events per year, that's <strong style={{ color: 'var(--ink)' }}>1,000 errors annually</strong> — 
                     roughly 20 per week requiring human review. That is not automation.
                   </p>
                 </div>
