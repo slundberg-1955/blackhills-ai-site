@@ -37,7 +37,7 @@ export default function Services() {
                 100 errors — nearly 2 per week.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
-                BHAI's docketing engine combines a deterministic rule engine with AI enrichment.
+                BHAI's docketing engine combines a deterministic rule engine with AI enrichment to both update your docketing system AND verify the update was successful.
                 The result approaches 100% accuracy — not by improving prompts, but by eliminating 
                 entire error categories through architecture.
               </p>
