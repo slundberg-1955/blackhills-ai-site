@@ -269,7 +269,7 @@ export default function Home() {
               <div className="acc-panel">
                 <div className="acc-panel-title">Docketing Accuracy Comparison</div>
                 {[
-                  { label: 'Gen AI (alone) best case trust-worthy outcomes', pct: 25, cls: 'fill-ok', display: '<25%' },
+                  { label: 'Gen AI (alone) best case trustworthy outcomes', pct: 25, cls: 'fill-ok', display: '<25%' },
                   { label: 'AI docketing bolt-ons — trusted unsupervised automation', pct: 15, cls: 'fill-bad', display: '<15%' },
                   { label: 'BHAI docketing engine', pct: 100, cls: 'fill-bhai', display: '≈100%' },
                 ].map(b => (
