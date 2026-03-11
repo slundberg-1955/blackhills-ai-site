@@ -253,8 +253,8 @@ export default function Home() {
               <h2 className="section-title">The docketing engine<br/>that's <em>10,000× more accurate</em><br/>than gen AI alone</h2>
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 20 }}>
-                Generative AI achieves 90–95% accuracy on the simplest docketing tasks but can behave unpredictably
-                as complexity increases. Impressive for chat. Catastrophic for complex IP docketing —
+                Industry-standard IP docketing demands better than 99.9% accuracy. Generative AI delivers 
+                roughly 95% on simple tasks — and under 66% on complex ones. Catastrophic for complex IP docketing —
                 where a single error can erode client trust and mean lost patent rights, malpractice exposure, and
                 seven-figure liability.
               </p>
