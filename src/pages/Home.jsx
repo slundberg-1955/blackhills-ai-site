@@ -253,7 +253,7 @@ export default function Home() {
               <h2 className="section-title">The docketing engine<br/>that's <em>10,000× more accurate</em><br/>than gen AI alone</h2>
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 20 }}>
-                Generative AI achieves 97–99% accuracy on isolated tasks. Impressive for chat. 
+                Generative AI achieves 95% accuracy on isolated language tasks. Impressive for chat. 
                 Catastrophic for IP docketing — where a single error can mean lost patent rights, 
                 malpractice exposure, and seven-figure liability.
               </p>
