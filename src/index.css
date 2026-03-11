@@ -451,7 +451,7 @@ h3.card-title {
   content: '';
   position: absolute; inset: -10%;
   background: url('/graph-bg-light.png') center/cover no-repeat;
-  opacity: 0.15;
+  opacity: 0.06;
 }
 .hero-fractal::after {
   content: '';
@@ -467,7 +467,7 @@ h3.card-title {
   content: '';
   position: absolute; inset: -10%;
   background: url('/graph-bg-dark.png') center/cover no-repeat;
-  opacity: 0.2;
+  opacity: 0.08;
 }
 .hero-fractal-dark::after {
   content: '';
