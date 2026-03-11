@@ -5,7 +5,6 @@ export default function Services() {
     <>
       {/* HERO */}
       <section style={{ background: 'var(--ink)', padding: '140px 60px 100px', position: 'relative', overflow: 'hidden' }}>
-        <div className="hero-fractal-dark" />
         <div style={{ maxWidth: 1200, margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <div className="eyebrow" style={{ color: 'var(--red-light)' }}>IP Services</div>
           <h1 className="display" style={{ color: 'var(--white)', maxWidth: 760 }}>

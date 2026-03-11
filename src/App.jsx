@@ -18,6 +18,7 @@ export default function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <ScrollToTop />
+      <div className="graph-bg-fixed" />
       <Nav />
       <main className="pt-nav">
         <Routes>
