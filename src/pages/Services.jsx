@@ -58,8 +58,8 @@ export default function Services() {
                 </div>
                 {[
                   { label: 'At 90% accuracy / 10K events', errors: '1,000 errors/yr', detail: '~20 errors per week', cls: 'fill-bad' },
-                  { label: 'At 95% accuracy / 10K events', errors: '500 errors/yr', detail: '~2 errors per day', cls: 'fill-ok' },
-                  { label: 'At 99% accuracy / 10K events', errors: '100 errors/yr', detail: '~2 errors per week', cls: 'fill-ok' },
+                  { label: 'At 80% accuracy / 10K events', errors: '2,000 errors/yr', detail: '~40 errors per week', cls: 'fill-ok' },
+                  { label: 'At 70% accuracy / 10K events', errors: '3,000 errors/yr', detail: '~60 errors per week', cls: 'fill-ok' },
                   { label: 'BHAI docketing engine', errors: '≈ 0 errors', detail: 'Deterministic + AI architecture', cls: 'fill-bhai' },
                 ].map((r, i) => (
                   <div key={i} style={{ padding: '14px 0', borderBottom: '1px solid var(--ink-10)' }}>
