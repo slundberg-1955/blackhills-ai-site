@@ -270,8 +270,8 @@ export default function Home() {
                   Docketing Accuracy Comparison
                 </div>
                 {[
-                  { label: 'Gen AI alone (best case)', pct: 99, cls: 'fill-ok', display: '~99%' },
-                  { label: 'AI docketing bolt-ons', pct: 90, cls: 'fill-bad', display: '~90%' },
+                  { label: 'Gen AI best case for simple language task', pct: 95, cls: 'fill-ok', display: '~95%' },
+                  { label: 'Gen AI complex docketing task — trustworthy unsupervised outcomes', pct: 15, cls: 'fill-bad', display: '<15%' },
                   { label: 'BHAI docketing engine', pct: 100, cls: 'fill-bhai', display: '≈100%' },
                 ].map(b => (
                   <div key={b.label} className="acc-bar-group">
