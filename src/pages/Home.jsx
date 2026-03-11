@@ -209,7 +209,7 @@ export default function Home() {
                 tag: 'Platform',
                 title: 'Otto HUB™',
                 desc: 'The open data and API layer that powers every Black Hills AI product — and your own custom AI tools. Real-time USPTO data, AI enrichment, 25+ REST endpoints, full SDK.',
-                bullets: ['25+ live API and MCP endpoints', 'Real-time Patent Center sync', 'Python & Node.js SDKs', 'Build with Claude, Cursor, Windsurf'],
+                bullets: ['25+ live API and MCP endpoints', 'Real-time Patent Center sync', 'Integrated with DMS and IPMS', 'Build with Claude, Cursor, Windsurf'],
                 link: '/otto-hub',
                 cta: 'Explore the Platform',
               },
