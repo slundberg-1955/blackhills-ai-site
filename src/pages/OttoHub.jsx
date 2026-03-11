@@ -244,7 +244,7 @@ export default function OttoHub() {
                 <div>hub.<span className="c-fn">loadDocumentToDMS</span>(analysis, app_number)</div>
               </div>
               <div style={{ marginTop: 16, padding: '14px 20px', background: 'var(--red-pale)', border: '1px solid var(--red)', fontSize: '0.78rem', color: 'var(--ink-50)', lineHeight: 1.6 }}>
-                ✦ Full Python & Node.js SDKs available · OpenAPI spec included · Sandbox environment
+                ✦ Full Integrated with DMS and IPMS available · OpenAPI spec included · Sandbox environment
               </div>
             </div>
           </div>

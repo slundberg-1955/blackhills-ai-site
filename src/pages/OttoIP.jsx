@@ -94,7 +94,7 @@ export default function OttoIP() {
             {[
               { icon: '🏢', title: 'For Corporate IP Departments', desc: 'Connect your internal docketing systems, build custom prior art workflows, automate annuity triggers — all on production-grade USPTO data.' },
               { icon: '⚖️', title: 'For Law Firms', desc: 'Build client-specific prosecution workflows, automate IDS processing, create custom matter dashboards — in days with Claude Code or Cursor.' },
-              { icon: '🔧', title: 'For Technology Partners', desc: 'Integrate Otto HUB into your existing legal tech stack. REST APIs, OpenAPI spec, Python & Node.js SDKs. No proprietary middleware required.' },
+              { icon: '🔧', title: 'For Technology Partners', desc: 'Integrate Otto HUB into your existing legal tech stack. REST APIs, OpenAPI spec, Integrated with DMS and IPMS. No proprietary middleware required.' },
             ].map(c => (
               <div key={c.title} className="card">
                 <div style={{ fontSize: '1.6rem', marginBottom: 16 }}>{c.icon}</div>
