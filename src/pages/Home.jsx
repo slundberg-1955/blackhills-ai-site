@@ -217,7 +217,7 @@ export default function Home() {
                 tag: 'Tools',
                 title: 'Otto IP™ Suite',
                 desc: 'AI-powered tools for IP prosecution built on top of Otto HUB — including the Otto IP web application and the Otto IP Word Add-In for drafting and prosecution.',
-                bullets: ['Patent drafting wizard', 'Office action analysis', 'Word Add-In integration', 'AI novelty screening'],
+                bullets: ['Patent drafting wizard', 'Office action analysis', 'Word Add-In integration', 'Integrated with Draw.io and Ketcher'],
                 link: '/otto-ip',
                 cta: 'See the Suite',
               },
