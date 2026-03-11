@@ -23,23 +23,18 @@ export default function Services() {
           <div className="two-col" style={{ alignItems: 'center' }}>
             <div>
               <div className="eyebrow">Docketing Automation</div>
-              <h2 className="section-title">10,000× more accurate<br/>than <em>gen AI alone.</em></h2>
+              <h2 className="section-title">The docketing engine<br/>that's <em>10,000× more accurate</em><br/>than gen AI alone</h2>
               <div className="gold-rule" />
               <p className="body-text" style={{ marginBottom: 20 }}>
-                Processing a single USPTO Office Action correctly requires resolving approximately 
-                40 or more interdependent variables — matter identification, document classification, 
-                deadline calculation, docket template selection, cross-off triggers, and more.
-              </p>
-              <p className="body-text" style={{ marginBottom: 20 }}>
-                Generative AI handles language brilliantly. But IP docketing isn't a language task —
-                it's a legal reasoning process with cascading, irreversible consequences. At 90% accuracy 
-                on 10,000 annual docketing events, that's 1,000 errors per year. At 99%, still 
-                100 errors — nearly 2 per week.
+                Industry-standard IP docketing demands better than 99.9% accuracy. Generative AI delivers 
+                roughly 95% on simple tasks — and under 66% on complex ones. Good enough for chat, but catastrophic for IP docketing —
+                where a single error can erode client trust and mean lost patent rights, malpractice exposure, and
+                seven-figure liability.
               </p>
               <p className="body-text" style={{ marginBottom: 32 }}>
-                BHAI's docketing engine combines a deterministic rule engine with AI enrichment.
-                The result approaches 100% accuracy — not by improving prompts, but by eliminating 
-                entire error categories through architecture.
+                Black Hills AI's docketing engine combines deterministic rule engines with 
+                AI enrichment. The result: Swiss watch precision and accuracy that approaches 100% — not through better 
+                prompting, but through architectural design that enforces docketing perfection and delivers unparalleled accuracy.
               </p>
               <ul className="check-list" style={{ marginBottom: 32 }}>
                 <li>Automated patent & trademark docketing (US & foreign)</li>
@@ -51,35 +46,28 @@ export default function Services() {
               <Link to="/contact" className="btn btn-dark">Get a Docketing Assessment</Link>
             </div>
             <div>
-              {/* Error math callout */}
-              <div style={{ background: 'var(--off-white)', border: '1px solid var(--ink-10)', padding: 40 }}>
-                <div style={{ fontSize: '0.68rem', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--ink-30)', marginBottom: 28 }}>
-                  The Fatal Mathematics of Gen AI Docketing
-                </div>
+              <div className="acc-panel">
+                <div className="acc-panel-title">Docketing Accuracy Comparison</div>
                 {[
-                  { label: 'At 90% accuracy / 10K events', errors: '1,000 errors/yr', detail: '~20 errors per week', cls: 'fill-bad' },
-                  { label: 'At 95% accuracy / 10K events', errors: '500 errors/yr', detail: '~2 errors per day', cls: 'fill-ok' },
-                  { label: 'At 99% accuracy / 10K events', errors: '100 errors/yr', detail: '~2 errors per week', cls: 'fill-ok' },
-                  { label: 'BHAI docketing engine', errors: '≈ 0 errors', detail: 'Deterministic + AI architecture', cls: 'fill-bhai' },
-                ].map((r, i) => (
-                  <div key={i} style={{ padding: '14px 0', borderBottom: '1px solid var(--ink-10)' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 }}>
-                      <div>
-                        <div style={{ fontSize: '0.78rem', color: 'var(--ink-50)', marginBottom: 3 }}>{r.label}</div>
-                        <div style={{ fontSize: '0.72rem', color: 'var(--ink-30)' }}>{r.detail}</div>
-                      </div>
-                      <div style={{
-                        fontFamily: 'var(--font-display)',
-                        fontSize: '1rem',
-                        fontWeight: 700,
-                        color: r.cls === 'fill-bhai' ? 'var(--green)' : r.cls === 'fill-bad' ? '#c0392b' : '#e67e22',
-                        whiteSpace: 'nowrap'
-                      }}>{r.errors}</div>
+                  { label: 'Gen AI (alone) best case trustworthy outcomes', pct: 25, cls: 'fill-ok', display: '<25%' },
+                  { label: 'AI docketing bolt-ons — trusted unsupervised automation', pct: 15, cls: 'fill-bad', display: '<15%' },
+                  { label: 'BHAI docketing engine', pct: 100, cls: 'fill-bhai', display: '≈100%' },
+                ].map(b => (
+                  <div key={b.label} className="acc-bar-group">
+                    <div className="acc-bar-label">
+                      <span className="acc-name">{b.label}</span>
+                      <span className="acc-pct">{b.display}</span>
+                    </div>
+                    <div className="acc-bar-track">
+                      <div className={`acc-bar-fill ${b.cls}`} style={{ width: `${b.pct}%` }} />
                     </div>
                   </div>
                 ))}
-                <div style={{ marginTop: 20, fontSize: '0.78rem', color: 'var(--ink-30)', fontStyle: 'italic', lineHeight: 1.6 }}>
-                  At any error rate above zero, every output requires human review. That's not automation — that's assisted manual work with an AI label.
+                <div className="acc-callout">
+                  <p>
+                    At 90% accuracy on 10,000 docketing events per year, that's <strong>1,000 errors annually</strong> — 
+                    roughly 20 per week requiring human review. That is not automation.
+                  </p>
                 </div>
               </div>
             </div>
