@@ -65,10 +65,9 @@ export default function Home() {
                   <div className="arch-tag">Custom Build</div>
                   <h3>Your Custom AI</h3>
                 </div>
-                <div className="arch-consumer future">
+                <div className="arch-consumer">
                   <div className="arch-tag">Ecosystem</div>
                   <h3>Partner Apps</h3>
-                  <div className="arch-future-badge">Planned</div>
                 </div>
               </div>
               <div className="arch-connector-group">
