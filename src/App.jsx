@@ -7,6 +7,7 @@ import OttoHub from './pages/OttoHub'
 import OttoIP from './pages/OttoIP'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import Renewals from './pages/Renewals'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="/otto-hub" element={<OttoHub />} />
           <Route path="/otto-ip" element={<OttoIP />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/renewals" element={<Renewals />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

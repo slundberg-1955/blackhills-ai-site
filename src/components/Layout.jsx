@@ -10,6 +10,7 @@ export function Nav() {
     { to: '/otto-hub', label: 'Otto HUB' },
     { to: '/otto-ip', label: 'Otto IP Suite' },
     { to: '/services', label: 'Services' },
+    { to: '/renewals', label: 'IP Renewals' },
     { to: '/contact', label: "Let's Talk" },
   ]
 
@@ -105,7 +106,7 @@ export function Footer() {
             <h5>Services</h5>
             <ul>
               <li><Link to="/services">Docketing Automation</Link></li>
-              <li><Link to="/services">IP Renewals</Link></li>
+              <li><Link to="/renewals">IP Renewals</Link></li>
               <li><Link to="/services">File Transfer &amp; Honu</Link></li>
               <li><Link to="/services">IP Outsourcing</Link></li>
             </ul>
