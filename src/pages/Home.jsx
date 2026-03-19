@@ -62,6 +62,10 @@ export default function Home() {
                   <h3>Tools/Process</h3>
                 </div>
                 <div className="arch-consumer">
+                  <div className="arch-tag">MCP Client</div>
+                  <h3>Claude Desktop</h3>
+                </div>
+                <div className="arch-consumer">
                   <div className="arch-tag">Custom Build</div>
                   <h3>Your Custom AI</h3>
                 </div>
@@ -71,6 +75,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="arch-connector-group">
+                <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
@@ -94,7 +99,7 @@ export default function Home() {
                     <div className="arch-badge">OpenAPI</div>
                     <div className="arch-badge">Metadata</div>
                     <div className="arch-badge">LLM APIs</div>
-                    <div className="arch-badge">MCP Endpoints</div>
+                    <div className="arch-badge">MCP Servers</div>
                   </div>
                 </div>
               </div>
@@ -208,7 +213,7 @@ export default function Home() {
                 tag: 'Platform',
                 title: 'Otto HUB™',
                 desc: 'The open data and API layer that powers every Black Hills AI product — and your own custom AI tools. Real-time USPTO data, AI enrichment, 25+ REST endpoints, full SDK.',
-                bullets: ['25+ live API and MCP endpoints', 'Real-time Patent Center sync', 'Integrated with DMS and IPMS', 'Build with Claude, Cursor, Windsurf'],
+                bullets: ['25+ live API and MCP endpoints', 'Real-time Patent Center sync', 'Integrated with DMS and IPMS', 'Connect via MCP, REST, or AI coding platforms'],
                 link: '/otto-hub',
                 cta: 'Explore the Platform',
               },

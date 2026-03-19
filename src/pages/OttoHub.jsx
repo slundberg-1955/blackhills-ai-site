@@ -101,6 +101,10 @@ export default function OttoHub() {
                   <h3>Tools/Process</h3>
                 </div>
                 <div className="arch-consumer">
+                  <div className="arch-tag">MCP Client</div>
+                  <h3>Claude Desktop</h3>
+                </div>
+                <div className="arch-consumer">
                   <div className="arch-tag">Custom Build</div>
                   <h3>Your Custom AI</h3>
                 </div>
@@ -112,6 +116,7 @@ export default function OttoHub() {
 
               {/* Connectors: consumers → hub */}
               <div className="arch-connector-group">
+                <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
                 <div className="arch-connector-line up" />
@@ -139,7 +144,7 @@ export default function OttoHub() {
                     <div className="arch-badge">Anthropic APIs</div>
                     <div className="arch-badge">OpenAI APIs</div>
                     <div className="arch-badge">LLM APIs</div>
-                    <div className="arch-badge">MCP Endpoints</div>
+                    <div className="arch-badge">MCP Servers</div>
                   </div>
                 </div>
               </div>
@@ -201,13 +206,19 @@ export default function OttoHub() {
                 and <strong>Windsurf</strong> make it possible for your team to build custom IP automation 
                 tools in days, not months — on top of production-grade IP data infrastructure.
               </p>
-              <p className="body-text" style={{ marginBottom: 32 }}>
+              <p className="body-text" style={{ marginBottom: 20 }}>
                 Otto HUB's open APIs give your developers — or your AI coding agent — 
                 real-time USPTO data, enriched matter records, and full document operations 
                 through clean REST endpoints. No vendor lock-in. No proprietary SDK required.
               </p>
+              <p className="body-text" style={{ marginBottom: 32 }}>
+                Otto HUB also exposes <strong>MCP servers</strong> that <strong>Claude Desktop</strong> can 
+                connect to directly via <code style={{ fontSize: '0.82em', background: 'var(--off-white)', padding: '2px 6px', border: '1px solid var(--ink-10)' }}>claude_desktop_config.json</code>. 
+                No custom code needed — just configure and connect to real-time IP data, document operations, 
+                and AI analysis from within Claude Desktop.
+              </p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 32 }}>
-                {['Claude Code', 'Cursor', 'Windsurf', 'n8n', 'Zapier', 'Any REST client'].map(t => (
+                {['Claude Desktop', 'Claude Code', 'Cursor', 'Windsurf', 'n8n', 'Zapier', 'Any REST client'].map(t => (
                   <span key={t} style={{
                     padding: '5px 12px', border: '1px solid var(--ink-10)',
                     fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--ink-50)'
@@ -250,8 +261,65 @@ export default function OttoHub() {
         </div>
       </section>
 
-      {/* ENDPOINTS TABLE */}
+      {/* CLAUDE DESKTOP + MCP */}
       <section className="bg-cream">
+        <div className="container">
+          <div className="two-col" style={{ alignItems: 'start' }}>
+            <div>
+              <div className="eyebrow">Claude Desktop + MCP</div>
+              <h2 className="section-title">Connect to Otto HUB<br/>from <em>Claude Desktop</em></h2>
+              <div className="gold-rule" />
+              <p className="body-text" style={{ marginBottom: 20 }}>
+                The <strong>Model Context Protocol (MCP)</strong> is the mechanism for connecting 
+                Claude Desktop to external APIs, databases, local file systems, and third-party 
+                services — via MCP servers configured in a single <code style={{ fontSize: '0.82em', background: 'var(--white)', padding: '2px 6px', border: '1px solid var(--ink-10)' }}>claude_desktop_config.json</code> file.
+              </p>
+              <p className="body-text" style={{ marginBottom: 32 }}>
+                Otto HUB provides a production-ready MCP server that gives Claude Desktop 
+                direct access to your IP data infrastructure. No custom code, no REST calls, 
+                no SDK — just configure and connect.
+              </p>
+              <ul className="check-list" style={{ marginBottom: 32 }}>
+                <li>Real-time USPTO prosecution data</li>
+                <li>Enriched IPMS matter records</li>
+                <li>Document operations — retrieve, route, convert</li>
+                <li>AI-powered analysis and summaries</li>
+                <li>Prior art search and retrieval</li>
+                <li>Full portfolio intelligence from Claude Desktop</li>
+              </ul>
+              <Link to="/contact" className="btn btn-dark">Get MCP Access</Link>
+            </div>
+            <div>
+              <div className="code-snippet">
+                <div className="c-comment">// claude_desktop_config.json</div>
+                <div className="c-comment">// Connect Claude Desktop to Otto HUB™ via MCP</div>
+                <br/>
+                <div>{'{'}</div>
+                <div>{'  '}<span className="c-string">"mcpServers"</span>{': {'}</div>
+                <div>{'    '}<span className="c-string">"otto-hub"</span>{': {'}</div>
+                <div>{'      '}<span className="c-string">"command"</span>{': '}<span className="c-string">"npx"</span>,</div>
+                <div>{'      '}<span className="c-string">"args"</span>{': ['}</div>
+                <div>{'        '}<span className="c-string">"@blackhillsai/otto-hub-mcp"</span></div>
+                <div>{'      ],'}</div>
+                <div>{'      '}<span className="c-string">"env"</span>{': {'}</div>
+                <div>{'        '}<span className="c-string">"OTTO_HUB_API_KEY"</span>{': '}<span className="c-string">"your-api-key"</span>,</div>
+                <div>{'        '}<span className="c-string">"OTTO_HUB_ORG"</span>{': '}<span className="c-string">"your-org-id"</span></div>
+                <div>{'      }'}</div>
+                <div>{'    }'}</div>
+                <div>{'  }'}</div>
+                <div>{'}'}</div>
+              </div>
+              <div style={{ marginTop: 16, padding: '14px 20px', background: 'var(--red-pale)', border: '1px solid var(--red)', fontSize: '0.78rem', color: 'var(--ink-50)', lineHeight: 1.6 }}>
+                ✦ Once configured, Claude Desktop can access all Otto HUB<span className="tm">™</span> tools — file history, claims, 
+                office actions, document operations, and AI analysis — directly in conversation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ENDPOINTS TABLE */}
+      <section>
         <div className="container">
           <div className="eyebrow">API Reference</div>
           <h2 className="section-title">Example production endpoints.<br/><em>All the data you need.</em></h2>
