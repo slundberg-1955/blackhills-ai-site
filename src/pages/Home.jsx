@@ -59,7 +59,7 @@ export default function Home() {
                 </div>
                 <div className="arch-consumer">
                   <div className="arch-tag">Automation</div>
-                  <h3>Tools/Process</h3>
+                  <h3>Tools &amp; Process</h3>
                 </div>
                 <div className="arch-consumer">
                   <div className="arch-tag">MCP Client</div>
