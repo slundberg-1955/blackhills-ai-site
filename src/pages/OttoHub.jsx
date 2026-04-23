@@ -318,6 +318,123 @@ export default function OttoHub() {
         </div>
       </section>
 
+      {/* MCP IN ACTION */}
+      <section>
+        <div className="container">
+          <div className="eyebrow">MCP in Action</div>
+          <h2 className="section-title">Your data. Your AI platform.<br/><em>One MCP server connects them.</em></h2>
+          <div className="gold-rule" />
+
+          {/* Flow Diagram */}
+          <div className="mcp-flow" style={{ marginTop: 48 }}>
+            {/* Left: Your Data */}
+            <div className="mcp-flow-col">
+              <div className="mcp-flow-label">Your Data</div>
+              <div className="mcp-flow-card">
+                <h4>Private prosecution</h4>
+                <p>Pending US apps &amp; files</p>
+              </div>
+              <div className="mcp-flow-card">
+                <h4>Issued portfolio</h4>
+                <p>Granted US patents</p>
+              </div>
+              <div className="mcp-flow-card">
+                <h4>International libraries</h4>
+                <p>EPO, WIPO, JPO, CNIPA, KIPO</p>
+              </div>
+            </div>
+
+            {/* Center: Hub + Arrows */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+              <div className="mcp-flow-arrow">→</div>
+              <div className="mcp-flow-hub">
+                <div className="mcp-flow-hub-box">
+                  <div className="mcp-hub-label">Otto HUB</div>
+                  <h3>MCP Server</h3>
+                  <p>Works with any AI platform</p>
+                </div>
+              </div>
+              <div className="mcp-flow-arrow">→</div>
+            </div>
+
+            {/* Right: AI Platform */}
+            <div className="mcp-flow-col">
+              <div className="mcp-flow-label">Your AI Platform</div>
+              <div className="mcp-flow-platform-badges">
+                <span>Claude</span>
+                <span>Copilot</span>
+                <span>ChatGPT</span>
+              </div>
+              <div className="mcp-flow-card skill-card">
+                <h4>Merges &amp; responses</h4>
+                <p>OAs, amendments, remarks</p>
+              </div>
+              <div className="mcp-flow-card skill-card">
+                <h4>Checklist reviews</h4>
+                <p>NOA, IDS, 1449</p>
+              </div>
+              <div className="mcp-flow-card skill-card">
+                <h4>Prosecution reports</h4>
+                <p>Family, continuity, audits</p>
+              </div>
+            </div>
+          </div>
+
+          {/* As easy as 1-2-3 */}
+          <h3 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.4rem, 2.5vw, 2rem)', fontWeight: 700, textAlign: 'center', color: 'var(--ink)', marginTop: 64 }}>
+            As easy as 1–2–3
+          </h3>
+          <div className="mcp-steps">
+            <div className="mcp-step">
+              <div className="mcp-step-header">
+                <div className="mcp-step-num">1</div>
+                <h4>Sign up</h4>
+              </div>
+              <p>Create your Otto HUB account in minutes. No infrastructure to stand up.</p>
+            </div>
+            <div className="mcp-step">
+              <div className="mcp-step-header">
+                <div className="mcp-step-num">2</div>
+                <h4>Authorize BHAI</h4>
+              </div>
+              <p>Grant access to your USPTO Customer Number and portfolio data. Revocable anytime.</p>
+            </div>
+            <div className="mcp-step">
+              <div className="mcp-step-header">
+                <div className="mcp-step-num">3</div>
+                <h4>Plug in &amp; run</h4>
+              </div>
+              <p>Add Otto HUB MCP to Claude, Copilot, or ChatGPT — and start running skills across your whole portfolio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ONE-CLICK SKILLS */}
+      <section className="bg-cream">
+        <div className="container">
+          <div className="eyebrow">One-Click Skills, Out of the Box</div>
+          <div className="gold-rule" />
+          <div className="mcp-skills-grid">
+            {[
+              'OA merges & response drafts',
+              'NOA readiness checklists',
+              'IDS & 1449 consideration review',
+              'Appeal brief drafting',
+              'Continuation claim planning',
+              'Family & continuity audits',
+              'Claim-to-spec mapping',
+              'Build your own in minutes',
+            ].map(skill => (
+              <div key={skill} className="mcp-skill-item">
+                <div className="mcp-skill-dot" />
+                <span>{skill}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ENDPOINTS TABLE */}
       <section>
         <div className="container">
