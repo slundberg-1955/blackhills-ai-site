@@ -287,7 +287,10 @@ export default function OttoHub() {
                 <li>Prior art search and retrieval</li>
                 <li>Full portfolio intelligence from Claude Desktop</li>
               </ul>
-              <Link to="/contact" className="btn btn-dark">Get MCP Access</Link>
+              <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+                <Link to="/otto-hub/mcp-controller" className="btn btn-dark">Explore MCP Controller</Link>
+                <Link to="/contact" className="btn btn-outline">Get MCP Access</Link>
+              </div>
             </div>
             <div>
               <div className="code-snippet">

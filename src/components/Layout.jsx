@@ -96,6 +96,7 @@ export function Footer() {
             <h5>Platform</h5>
             <ul>
               <li><Link to="/otto-hub">Otto HUB<span className="tm">™</span></Link></li>
+              <li><Link to="/otto-hub/mcp-controller">MCP Controller</Link></li>
               <li><Link to="/otto-ip">Otto IP Suite</Link></li>
               <li><Link to="/otto-ip">Otto IP Web</Link></li>
               <li><Link to="/otto-ip">Otto IP for Word</Link></li>

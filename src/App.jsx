@@ -4,6 +4,7 @@ import { Nav } from './components/Layout'
 import { Footer } from './components/Layout'
 import Home from './pages/Home'
 import OttoHub from './pages/OttoHub'
+import MCPController from './pages/MCPController'
 import OttoIP from './pages/OttoIP'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
@@ -25,6 +26,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/otto-hub" element={<OttoHub />} />
+          <Route path="/otto-hub/mcp-controller" element={<MCPController />} />
           <Route path="/otto-ip" element={<OttoIP />} />
           <Route path="/services" element={<Services />} />
           <Route path="/renewals" element={<Renewals />} />
